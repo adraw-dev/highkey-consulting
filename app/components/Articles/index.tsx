@@ -115,7 +115,7 @@ export default class MultipleItems extends Component {
                     </div>
 
 
-                    <Slider {...settings}>
+                    {/* <Slider {...settings}>
                         {postData.map((items, i) => (
                             <div key={i} >
 
@@ -137,7 +137,7 @@ export default class MultipleItems extends Component {
 
                             </div>
                         ))}
-                    </Slider>
+                    </Slider> */}
                 </div>
             </div>
 

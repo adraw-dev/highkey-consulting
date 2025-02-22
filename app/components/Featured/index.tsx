@@ -93,7 +93,7 @@ export default class MultipleItems extends Component {
                         <h3 className="text-4xl sm:text-6xl font-bold text-white text-opacity-25 lg:-mr-32 my-2">Featured works.</h3>
                     </div>
 
-                    <Slider {...settings}>
+                    {/* <Slider {...settings}>
                         {postData.map((items, i) => (
                             <div key={i}>
 
@@ -106,7 +106,7 @@ export default class MultipleItems extends Component {
 
                             </div>
                         ))}
-                    </Slider>
+                    </Slider> */}
                 </div>
             </div>
 

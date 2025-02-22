@@ -18,7 +18,7 @@ const Contactusform = () => {
 
   const handleClick = () => {
     alert(
-      `Name: ${inputValues.input1}, Email-address: ${inputValues.input2}, Message: ${inputValues.input3}`
+      `Name: ${inputValues.input1}, Email-address: ${inputValues.input2}`
     );
     setIsOpen(false);
   };
