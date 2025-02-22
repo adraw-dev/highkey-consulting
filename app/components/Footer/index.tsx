@@ -53,29 +53,19 @@ const footer = ({ isMain }: props) => {
                 height={50}
               />
             </div>
-            <div className="flex gap-4">
+            <div className="flex ml-10 gap-4">
               <div className="footer-icons">
-                <Link href="https://facebook.com">
+                <Link href="https://www.linkedin.com/in/jenniferleighvelez/" target="_blank">
                   <Image
-                    src={"/images/footer/vec.svg"}
-                    alt="facebook"
-                    width={15}
-                    height={20}
-                  />
-                </Link>
-              </div>
-              <div className="footer-icons">
-                <Link href="https://twitter.com">
-                  <Image
-                    src={"/images/footer/twitter.svg"}
-                    alt="twitter"
+                    src={"/images/footer/linkedin.png"}
+                    alt="linkedin"
                     width={20}
                     height={20}
                   />
                 </Link>
               </div>
               <div className="footer-icons">
-                <Link href="https://instagram.com">
+                <Link href="https://www.instagram.com/pbandjleighthyme/" target="_blank">
                   <Image
                     src={"/images/footer/instagram.svg"}
                     alt="instagram"

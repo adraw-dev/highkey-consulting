@@ -3,7 +3,12 @@ import ServiceCard, { CardServicesProps } from "./components/service-cards";
 
 const services: CardServicesProps[] = [
   {
-    title: "Brand Identity",
+    title: (
+      <p>
+        Brand
+        <br /> Identity
+      </p>
+    ),
     subtitle: (
       <div>
         <p className="drop-shadow-2xl  mt-7 text-4xl font-bold ">
@@ -17,7 +22,11 @@ const services: CardServicesProps[] = [
     imageUrl: "/images/services/brand.jpg",
   },
   {
-    title: "Marketing Materials",
+    title: (
+      <p>
+        Marketing <br /> Materials
+      </p>
+    ),
     subtitle: (
       <p className="drop-shadow-2xl  mt-7 text-4xl font-bold ">
         Develop a cohesive visual identity, including logos, color palettes,
@@ -29,7 +38,12 @@ const services: CardServicesProps[] = [
     imageUrl: "/images/services/beliefs.svg",
   },
   {
-    title: "Digital Design",
+    title: (
+      <p>
+        Digital
+        <br /> Design
+      </p>
+    ),
     subtitle: (
       <p className="drop-shadow-2xl  mt-7 text-4xl font-bold ">
         Develop a cohesive visual identity, including logos, color palettes,
@@ -41,7 +55,12 @@ const services: CardServicesProps[] = [
     imageUrl: "/images/services/beliefs.svg",
   },
   {
-    title: "Presentations & Decks",
+    title: (
+      <p>
+        Presentations
+        <br /> & Decks
+      </p>
+    ),
     subtitle: (
       <p className="drop-shadow-2xl  mt-7 text-4xl font-bold ">
         Develop a cohesive visual identity, including logos, color palettes,
@@ -53,7 +72,12 @@ const services: CardServicesProps[] = [
     imageUrl: "/images/services/beliefs.svg",
   },
   {
-    title: "Event & Brand Activations",
+    title: (
+      <p>
+        Event & Brand 
+        <br /> Activations
+      </p>
+    ),
     subtitle: (
       <p className="drop-shadow-2xl  mt-7 text-4xl font-bold ">
         Develop a cohesive visual identity, including logos, color palettes,
@@ -61,7 +85,7 @@ const services: CardServicesProps[] = [
         with your audience.
       </p>
     ),
-    description: "Build that great idea that you have.",
+    description: "",
     imageUrl: "/images/services/build.svg",
   },
 ];

@@ -82,7 +82,7 @@ const AboutMe = () => {
                 </div>
               </div>
               <Image
-                src="/images/aboutus/people.jpg"
+                src="/images/aboutus/197A4382.png"
                 alt="man-icon"
                 width={416}
                 height={530}
