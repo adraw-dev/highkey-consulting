@@ -22,9 +22,9 @@ const ServiceCard: React.FC<CardServicesProps> = ({
         backgroundImage: `url(${imageUrl})`,
         backgroundPosition: `${postionImage}`,
       }}
-      className={`  bg-no-repeat bg-cover  bg-darkblue shadow-xl w-full h-[30rem] lg:h-full lg:w-[40rem] py-auto pt-12 px-10 sm:px-10 pb-52 md:pb-30 rounded-3xl`}
+      className={`  bg-no-repeat bg-cover  max-w-2xl bg-darkblue shadow-xl w-[24rem] h-[30rem] lg:h-full lg:w-[40rem] py-auto pt-12 px-2 sm:px-10 pb-52 md:pb-30 rounded-3xl`}
     >
-      <h2 className="text-65xl font-extrabold text-white line-clamp-3 leading-snug mb-5 text-center sm:text-start">
+      <h2 className="text-65xl font-extrabold text-white line-clamp-3 leading-snug mb-5 text-start sm:text-start">
         {title}
       </h2>
     </div>

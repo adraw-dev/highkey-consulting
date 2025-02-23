@@ -11,9 +11,9 @@ const Dedicated = () => {
           <div>
             <motion.div
               className="w-full"
-              initial={{ x: -100 }}
+              initial={{ opacity:0 }}
               whileInView={{
-                x: 100,
+                opacity: 1,
                 transition: { duration: 1 },
               }}
               viewport={{ once: true }}

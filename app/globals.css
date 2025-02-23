@@ -27,6 +27,10 @@ body {
   background-color: #1a3b3b;
   font-family: Avenir;
 }
+
+.links-navbar{
+  font-family: Avenir;
+}
 /* 
 html:not([data-scroll="0"]) .navbar {
   position: fixed;

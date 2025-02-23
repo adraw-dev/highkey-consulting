@@ -41,8 +41,8 @@ const Aboutdata: datatype[] = [
 
 const AboutMe = () => {
   return (
-    <div id="aboutus-section" className="w-full bg-lightgrey">
-      <div className="mx-auto  max-w-7xl px-4 pt-20 pb-2  lg:px-10 bg-lightgrey">
+    <div id="aboutus-section" className="w-full bg-lightgrey z-10">
+      <div className="mx-auto  max-w-7xl px-4 pt-20 pb-2  lg:px-10  bg-lightgrey">
         <Image
           src="/images/aboutus/dots.svg"
           width={100}
@@ -60,10 +60,10 @@ const AboutMe = () => {
               width={300}
               height={50}
             />
-            <div className="flex flex-col  gap-10 mt-10 md: sm:flex-row">
+            <div className="flex flex-col  gap-10 mt-10  sm:flex-row">
               <div
                 id="text-about"
-                className="flex flex-col flex-grow clear-left justify-between"
+                className="flex flex-col flex-grow clear-left md:w-[40rem] lg:w-full justify-between"
                 style={{ clear: "left" }}
               >
                 <p className="text-justify mt-10 text-lg  font-bold">
@@ -123,9 +123,9 @@ const AboutMe = () => {
                 <Image
                   src="/images/aboutus/Jennifer_aboutUS.jpg"
                   alt="Jennifer Velez"
-                  width={416}
+                  width={516}
                   height={730}
-                  className="mx-auto md:mx-0 h-auto md:h-[730px] md:mt-[5%] rounded-xl shadow-xl"
+                  className="mx-auto md:mx-0 h-auto md:h-[570px] lg:h-auto md:mt-[20%] rounded-xl shadow-xl"
                 />
               </motion.div>
             </div>

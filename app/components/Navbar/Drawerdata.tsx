@@ -9,14 +9,14 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "home", href: "/", current: false },
-  { name: "About jennifer", href: "#aboutus-section", current: false },
-  { name: "Consulting", href: "#services-section", current: false },
-  { name: "Packages ", href: "#services-section", current: false },
-  { name: "Testimonial ", href: "#services-section", current: false },
-  { name: "Blog ", href: "#services-section", current: false },
-  { name: "Media Opportunities ", href: "#services-section", current: false },
-  { name: "Contact Us", href: "#blog-section", current: false },
+  // { name: "Home", href: "/", current: false },
+  { name: "About jennifer", href: "/About", current: false },
+  { name: "Consulting", href: "/Consulting", current: false },
+  { name: "Packages", href: "/Packages", current: false },
+  { name: "Testimonial ", href: "/Testimonial", current: false },
+  { name: "Blog ", href: "/Blog", current: false },
+  { name: "Media Opportunities", href: "/Media", current: false },
+  // { name: "Contact Us", href: "/Contact", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -37,7 +37,7 @@ const Data = () => {
                   item.current
                     ? "bg-gray-900 text-purple"
                     : "text-black hover:bg-gray-700 hover:text-purple",
-                  "block  py-2 rounded-md text-base font-medium"
+                  "block  py-2 rounded-md text-base font-semibold "
                 )}
                 aria-current={item.current ? "page" : undefined}
               >
@@ -45,7 +45,7 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-4"></div>
-            <button className="bg-navyblue w-full hover:text-white text-white rounded-md border border-purple font-medium py-2 px-4 rounded">
+            <button className="bg-darkpurple hover:bg-hopurple w-full hover:text-white text-white rounded-md border border-purple font-medium py-2 px-4 rounded">
               Contact Us
             </button>
             {/* <Contactusform /> */}
