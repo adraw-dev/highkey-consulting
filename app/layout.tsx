@@ -1,6 +1,6 @@
-import "./globals.css";
-import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer/index";
+import Navbar from "./components/Navbar/index";
+import "./globals.css";
 
 export const metadata = {
   title: "highkey consulting",
@@ -12,14 +12,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
   return (
     <html lang="en">
       <body className="flex flex-col justify-between min-h-screen">
         <script async src="//www.instagram.com/embed.js"></script>
 
         <Navbar />
-        {children}
-        <Footer isMain />
+        <div className="lg:mt-28">{children}</div>
+        <Footer  />
       </body>
     </html>
   );

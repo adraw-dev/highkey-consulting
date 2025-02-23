@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 interface datatype {
@@ -108,13 +110,24 @@ const AboutMe = () => {
                   </Link>
                 </div>
               </div>
-              <Image
-                src="/images/aboutus/Jennifer_aboutUS.jpg"
-                alt="Jennifer Velez"
-                width={416}
-                height={730}
-                className="mx-auto md:mx-0 h-auto md:h-[730px] md:mt-[5%] rounded-xl shadow-xl"
-              />
+              <motion.div
+                className="w-full"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: { duration: 1 },
+                }}
+                viewport={{ once: true }}
+              >
+                <Image
+                  src="/images/aboutus/Jennifer_aboutUS.jpg"
+                  alt="Jennifer Velez"
+                  width={416}
+                  height={730}
+                  className="mx-auto md:mx-0 h-auto md:h-[730px] md:mt-[5%] rounded-xl shadow-xl"
+                />
+              </motion.div>
             </div>
           </div>
         </div>

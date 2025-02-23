@@ -48,7 +48,7 @@ const Contactusform = () => {
             className="justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-darkpurple hover:text-white"
             onClick={openModal}
           >
-            Contact Me
+            Contact Us
           </button>
         </div>
       </div>

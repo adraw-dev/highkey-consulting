@@ -15,14 +15,14 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "home", href: "/", current: false },
-  { name: "About jennifer", href: "#aboutus-section", current: false },
-  { name: "Consulting", href: "#services-section", current: false },
-  { name: "Packages ", href: "#services-section", current: false },
-  { name: "Testimonial ", href: "#services-section", current: false },
-  { name: "Blog ", href: "#services-section", current: false },
-  { name: "Media Opportunities", href: "#services-section", current: false },
-  { name: "Contact Us", href: "#joinus-section", current: false },
+  // { name: "Home", href: "/", current: false },
+  { name: "About jennifer", href: "/About", current: false },
+  { name: "Consulting", href: "/Consulting", current: false },
+  { name: "Packages", href: "/Packages", current: false },
+  { name: "Testimonial ", href: "/Testimonial", current: false },
+  { name: "Blog ", href: "/Blog", current: false },
+  { name: "Media Opportunities", href: "/Media", current: false },
+  // { name: "Contact Us", href: "/Contact", current: false },
 ];
 
 function classNames(...classes: string[]) {

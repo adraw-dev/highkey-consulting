@@ -4,7 +4,7 @@ import ServiceCard, { CardServicesProps } from "./components/service-cards";
 const services: CardServicesProps[] = [
   {
     title: (
-      <p>
+      <p className="drop-shadow-xl">
         Communications
         <br /> Strategy
       </p>
@@ -19,11 +19,11 @@ const services: CardServicesProps[] = [
       </div>
     ),
     description: "",
-    imageUrl: "/images/services/brand.jpg",
+    imageUrl: "/images/services/strategy.jpg",
   },
   {
     title: (
-      <p>
+      <p >
         Marketing/ <br /> Storytelling
       </p>
     ),
@@ -35,7 +35,9 @@ const services: CardServicesProps[] = [
       </p>
     ),
     description: "",
-    imageUrl: "/images/services/beliefs.svg",
+    imageUrl: "/images/services/marketing.jpg",
+    postionImage: "top",
+
   },
   {
     title: (
@@ -52,7 +54,7 @@ const services: CardServicesProps[] = [
       </p>
     ),
     description: "",
-    imageUrl: "/images/services/beliefs.svg",
+    imageUrl: "/images/services/lgtb.jpg",
   },
   {
     title: (
@@ -69,7 +71,7 @@ const services: CardServicesProps[] = [
       </p>
     ),
     description: "",
-    imageUrl: "/images/services/beliefs.svg",
+    imageUrl: "/images/services/event.jpg",
   },
   {
     title: (
@@ -86,7 +88,7 @@ const services: CardServicesProps[] = [
       </p>
     ),
     description: "",
-    imageUrl: "/images/services/build.svg",
+    imageUrl: "/images/services/brand.jpg",
   },
   {
     title: (
@@ -103,7 +105,7 @@ const services: CardServicesProps[] = [
       </p>
     ),
     description: "",
-    imageUrl: "/images/services/build.svg",
+    imageUrl: "/images/services/personal_brand.jpg",
   },
   {
     title: (
@@ -120,7 +122,8 @@ const services: CardServicesProps[] = [
       </p>
     ),
     description: "",
-    imageUrl: "/images/services/build.svg",
+    imageUrl: "/images/services/gen_z.jpg",
+    postionImage: "top",
   },
 ];
 const Services = () => {

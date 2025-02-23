@@ -1,5 +1,9 @@
+"use client";
+import { debug } from "console";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 // MIDDLE LINKS DATA
 interface ProductType {
@@ -19,12 +23,20 @@ const products: ProductType[] = [
     section: "     ",
     link: ["Testimonial", "Blog", "Media Opportunities ", "Contact Us"],
   },
-
 ];
-interface props {
-  isMain: boolean;
-}
-const footer = ({ isMain }: props) => {
+
+const footer = () => {
+  const router = usePathname();
+  const [isMain, setIsMain] = useState(true);
+  
+  function isPrincipalPage(path: string) {
+    return path === "/";
+  }
+
+  useEffect(() => {
+    setIsMain(isPrincipalPage(router));
+  }, [router]);
+
   return (
     <div className="bg-charoal -mt-40" id="first-section">
       <div
