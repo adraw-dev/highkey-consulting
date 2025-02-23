@@ -125,7 +125,7 @@ const AboutMe = () => {
                   alt="Jennifer Velez"
                   width={516}
                   height={730}
-                  className="mx-auto md:mx-0 h-auto md:h-[570px] lg:h-auto md:mt-[20%] rounded-xl shadow-xl"
+                  className="mx-auto md:mx-0 h-auto md:h-[570px] lg:h-auto md:mt-[20%] lg:mt-[10%] rounded-xl shadow-xl"
                 />
               </motion.div>
             </div>
