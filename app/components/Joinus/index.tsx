@@ -4,7 +4,7 @@ const Join = () => {
       <div className="mx-auto max-w-2xl py-20 lg:max-w-7xl  lg:px-8">
         <div className="text-center">
          
-          <h2 className="text-black text-4xl sm:text-6xl font-bold my-6 leading-10">
+          <h2 className="text-black text-4xl mx-10 md:mx-0 sm:text-6xl font-bold my-6 leading-10">
             {" "}
             Schedule a free 30 minute consultation and let’s bring your vision to life!
           </h2>

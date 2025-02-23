@@ -36,7 +36,7 @@ const footer = ({ isMain }: props) => {
           {/* COLUMN-1 */}
 
           <div className="col-span-4">
-            <div className="text-white text-4xl font-semibold leading-9 mb-4 lg:mb-5">
+            <div className="text-white text-4xl font-semibold leading-9 mb-4 md:mt-10 lg:mt-0 lg:mb-5">
               <Image
                 src="/images/navbar/HIGHKEY-logo-white.png"
                 alt="hero-image"
