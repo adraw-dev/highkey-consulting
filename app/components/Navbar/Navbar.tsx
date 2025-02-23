@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <Disclosure as="nav" className="navbar">
       <>
-        <div className="mx-2 fixed z-50 w-full p-3 md:p-2 lg:px-0 lg:py-4 bg-white shadow-lg">
+        <div className=" fixed z-50 w-full p-3 md:p-2 lg:px-0 lg:py-4 bg-white shadow-lg">
           <div className="relative flex h-12 sm:h-20 items-center">
             <div className="flex flex-1 items-center sm:mx-72 md:mx-32 sm:justify-between">
               {/* LOGO */}

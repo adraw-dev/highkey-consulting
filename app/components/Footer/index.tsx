@@ -83,10 +83,10 @@ const footer = ({ isMain }: props) => {
               </p>
               <ul>
                 {product.link.map((link: string, index: number) => (
-                  <li key={index} className="mb-5">
+                  <li key={index} className="mb-5 ">
                     <Link
                       href="/"
-                      className="text-white text-lg font-normal mb-6 space-links"
+                      className="text-white text-lg font-normal mb-6  "
                     >
                       {link}
                     </Link>
