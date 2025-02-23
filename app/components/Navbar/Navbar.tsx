@@ -15,10 +15,14 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "About me", href: "#aboutus-section", current: false },
-  { name: "Services", href: "#services-section", current: false },
-  { name: "Blog", href: "#blog-section", current: false },
-  { name: "Testimonial", href: "#testimonial-section", current: false },
+  { name: "home", href: "/", current: false },
+  { name: "About jennifer", href: "#aboutus-section", current: false },
+  { name: "Consulting", href: "#services-section", current: false },
+  { name: "Packages ", href: "#services-section", current: false },
+  { name: "Testimonial ", href: "#services-section", current: false },
+  { name: "Blog ", href: "#services-section", current: false },
+  { name: "Media Opportunities", href: "#services-section", current: false },
+  { name: "Contact Us", href: "#joinus-section", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -31,9 +35,9 @@ const Navbar = () => {
   return (
     <Disclosure as="nav" className="navbar">
       <>
-        <div className="mx-auto fixed z-50 w-full p-3 md:p-4 lg:px-8 bg-white">
+        <div className="mx-2 fixed z-50 w-full p-3 md:p-2 lg:px-0 lg:py-4 bg-white shadow-lg">
           <div className="relative flex h-12 sm:h-20 items-center">
-            <div className="flex flex-1 items-center sm:mx-72 md:mx-52 sm:justify-between">
+            <div className="flex flex-1 items-center sm:mx-72 md:mx-32 sm:justify-between">
               {/* LOGO */}
 
               <div className="flex flex-shrink-0 items-center">

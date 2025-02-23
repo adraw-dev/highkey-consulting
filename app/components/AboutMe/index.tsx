@@ -49,32 +49,59 @@ const AboutMe = () => {
           className="absolute bottom-1 -left-20"
         />
 
-        <div className="flex flex-col gap-16 lg:flex-row px-2 my-16">
+        <div className="flex flex-col gap-16  lg:flex-row px-2 my-16">
           <div className="mt-2 px-5">
-            <h2 className="text-center text-aqua text-5xl font-bold tracking-widest">
-              ¡HI WE ARE HIGHKEY CONSULTING!
-            </h2>
+            <Image
+              className="mx-auto"
+              src="/images/navbar/HIGHKEY-logo-green.png"
+              alt="hero-image"
+              width={300}
+              height={50}
+            />
             <div className="flex flex-col  gap-10 mt-10 md: sm:flex-row">
-              <div>
+              <div
+                id="text-about"
+                className="flex flex-col flex-grow clear-left justify-between"
+                style={{ clear: "left" }}
+              >
                 <p className="text-justify mt-10 text-lg  font-bold">
-                  At HighKey Consulting, we’re more than a consultancy—we’re
-                  your dedicated partners in success. Led by our visionary CEO,
-                  Jennifer Velez, we blend inclusive leadership with
-                  ethnographic insights to craft strategies that unlock your
-                  business’s full potential. <br />
-                  <br /> From empowering women-owned businesses in South Bay to
-                  elevating established brands, we believe in authenticity,
-                  collaboration, and limitless growth. <br /> <br /> When you
-                  work with us, you gain a supportive team that invests in your
-                  success as if it were our own.
+                  At highkey consulting, we’re more than a consultancy -
+                  we&apos;re dedicated partners in success. Led by our visionary
+                  CEO, Jennifer Velez (she/her), we blend inclusive leadership
+                  with ethnographic insights and market research to craft
+                  strategies that unlock full potential. <br />
+                  <br /> From empowering women-owned businesses in the South Bay
+                  of Los Angeles to elevating established brands across the
+                  world, we prioritize authenticity, innovative thinking, and
+                  strategic action with a values based approach.
+                  <br /> <br /> When you work with us, you gain a supportive
+                  team that invests in your success as if it were our own
+                  <br />
+                  <br />
+                  Do you want to take a creative, authentic, values-based
+                  approach to growing your business?
+                  <br />
+                  <br />
+                  Have a creative project and are not quite ready to scale your
+                  team?
                 </p>
                 <br />
                 <p className="text-justify  text-xl  font-extrabold">
                   🚀 Ready to take your business to the next level?
                 </p>
                 <br />
+                <p className="text-justify  text-xl  font-extrabold">
+                  Whether you’re seeking a one time project or a package for
+                  ongoing support, we promise transparent, upfront, sliding
+                  scale pricing to accommodate any business need for a business
+                  of any size.
+                  <br />
+                  <br />
+                  Jennifer is committed to seeing people grow and believes
+                  everyone deserves access to unlimited potential.
+                </p>
                 <div className="my-7 flex justify-center  text-center lg:text-start">
-                  <Link href={"#joinus"}>
+                  <Link href={"#joinus-section"}>
                     <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-darkpurple text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hopurple">
                       Let’s connect!
                     </button>
@@ -82,11 +109,11 @@ const AboutMe = () => {
                 </div>
               </div>
               <Image
-                src="/images/aboutus/197A4382.png"
-                alt="man-icon"
+                src="/images/aboutus/Jennifer_aboutUS.jpg"
+                alt="Jennifer Velez"
                 width={416}
-                height={530}
-                className="mx-auto md:mx-0 rounded-xl shadow-xl"
+                height={730}
+                className="mx-auto md:mx-0 h-auto md:h-[730px] md:mt-[5%] rounded-xl shadow-xl"
               />
             </div>
           </div>

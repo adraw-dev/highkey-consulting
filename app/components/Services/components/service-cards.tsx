@@ -21,9 +21,9 @@ const ServiceCard: React.FC<CardServicesProps> = ({
         {title}
       </h2>
       <div className="border-t-2 border-secondary w-full my-4"></div>
-      <h3 className="text-4xl sm:text-65xl font-bold text-white leading-snug mb-5 text-center sm:text-start">
+      {/* <h3 className="text-4xl sm:text-65xl font-bold text-white leading-snug mb-5 text-center sm:text-start">
         {subtitle}
-      </h3>
+      </h3> */}
       <h5 className="text-offwhite pt-2  text-center sm:text-start">
         {description}
       </h5>

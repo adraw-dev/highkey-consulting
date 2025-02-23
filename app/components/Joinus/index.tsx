@@ -3,20 +3,12 @@ const Join = () => {
     <div className="bg-joinus bg-lightgrey my-20">
       <div className="mx-auto max-w-2xl py-20 lg:max-w-7xl  lg:px-8">
         <div className="text-center">
-          <h3 className="text-aqua text-lg font-normal tracking-widest">
-            JOIN US
-          </h3>
+         
           <h2 className="text-black text-4xl sm:text-6xl font-bold my-6 leading-10">
             {" "}
-            A simple and friendly way for potential clients to reach out to you
+            Schedule a free 30 minute consultation and let’s bring your vision to life!
           </h2>
-          <p className="text-black text-base font-xl">
-            Do you want to take a creative, authentic, values-based approach to
-            growing your business? <br /> Have a creative project and are not
-            quite ready to scale your team?
-            <br /> <br /> Schedule a free consultation and let’s bring your
-            vision to life!{" "}
-          </p>
+        
         </div>
 
         <div className="mx-auto max-w-4xl pt-5">

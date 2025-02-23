@@ -5,8 +5,8 @@ const services: CardServicesProps[] = [
   {
     title: (
       <p>
-        Brand
-        <br /> Identity
+        Communications
+        <br /> Strategy
       </p>
     ),
     subtitle: (
@@ -24,7 +24,7 @@ const services: CardServicesProps[] = [
   {
     title: (
       <p>
-        Marketing <br /> Materials
+        Marketing/ <br /> Storytelling
       </p>
     ),
     subtitle: (
@@ -40,8 +40,8 @@ const services: CardServicesProps[] = [
   {
     title: (
       <p>
-        Digital
-        <br /> Design
+        Diversity,
+        <br /> Equity + Inclusion
       </p>
     ),
     subtitle: (
@@ -57,8 +57,8 @@ const services: CardServicesProps[] = [
   {
     title: (
       <p>
-        Presentations
-        <br /> & Decks
+        Brand Activations
+        <br /> Event Planning
       </p>
     ),
     subtitle: (
@@ -74,8 +74,42 @@ const services: CardServicesProps[] = [
   {
     title: (
       <p>
-        Event & Brand 
-        <br /> Activations
+        Brand &
+        <br /> Strategy
+      </p>
+    ),
+    subtitle: (
+      <p className="drop-shadow-2xl  mt-7 text-4xl font-bold ">
+        Develop a cohesive visual identity, including logos, color palettes,
+        typography, and brand guidelines that reflect your essence and resonate
+        with your audience.
+      </p>
+    ),
+    description: "",
+    imageUrl: "/images/services/build.svg",
+  },
+  {
+    title: (
+      <p>
+        Personal
+        <br /> Branding
+      </p>
+    ),
+    subtitle: (
+      <p className="drop-shadow-2xl  mt-7 text-4xl font-bold ">
+        Develop a cohesive visual identity, including logos, color palettes,
+        typography, and brand guidelines that reflect your essence and resonate
+        with your audience.
+      </p>
+    ),
+    description: "",
+    imageUrl: "/images/services/build.svg",
+  },
+  {
+    title: (
+      <p>
+        Gen Z Consumer
+        <br />  Strategy
       </p>
     ),
     subtitle: (

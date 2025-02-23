@@ -11,24 +11,15 @@ interface ProductType {
 const products: ProductType[] = [
   {
     id: 1,
-    section: "Menu",
-    link: ["Home", "Popular", "About", "Contact"],
+    section: "",
+    link: ["Home", "About jennifer", "Consulting", "Packages"],
   },
   {
     id: 2,
-    section: "Category",
-    link: ["Design", "Mockup", "View all", "Log In"],
+    section: "     ",
+    link: ["Testimonial", "Blog", "Media Opportunities ", "Contact Us"],
   },
-  {
-    id: 3,
-    section: "Pages",
-    link: ["404", "Instructions", "License"],
-  },
-  {
-    id: 4,
-    section: "Others",
-    link: ["Styleguide", "Changelog"],
-  },
+
 ];
 interface props {
   isMain: boolean;
@@ -55,7 +46,10 @@ const footer = ({ isMain }: props) => {
             </div>
             <div className="flex ml-10 gap-4">
               <div className="footer-icons">
-                <Link href="https://www.linkedin.com/in/jenniferleighvelez/" target="_blank">
+                <Link
+                  href="https://www.linkedin.com/in/jenniferleighvelez/"
+                  target="_blank"
+                >
                   <Image
                     src={"/images/footer/linkedin.png"}
                     alt="linkedin"
@@ -65,7 +59,10 @@ const footer = ({ isMain }: props) => {
                 </Link>
               </div>
               <div className="footer-icons">
-                <Link href="https://www.instagram.com/pbandjleighthyme/" target="_blank">
+                <Link
+                  href="https://www.instagram.com/pbandjleighthyme/"
+                  target="_blank"
+                >
                   <Image
                     src={"/images/footer/instagram.svg"}
                     alt="instagram"
@@ -79,7 +76,7 @@ const footer = ({ isMain }: props) => {
 
           {/* CLOUMN-2/3 */}
 
-          {/* {products.map((product) => (
+          {products.map((product) => (
             <div key={product.id} className="group relative col-span-2">
               <p className="text-white text-xl font-extrabold mb-9">
                 {product.section}
@@ -97,7 +94,7 @@ const footer = ({ isMain }: props) => {
                 ))}
               </ul>
             </div>
-          ))} */}
+          ))}
         </div>
       </div>
 
