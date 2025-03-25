@@ -1,8 +1,7 @@
 "use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 interface datatype {
   heading: string;
@@ -42,7 +41,7 @@ const Aboutdata: datatype[] = [
 const AboutMe = () => {
   return (
     <div id="aboutus-section" className="w-full bg-lightgrey z-10">
-      <div className="mx-auto  max-w-7xl px-4 pt-20 pb-2  lg:px-10  bg-lightgrey">
+      <div className="mx-auto pt-2 max-w-7xl px-4 lg:pt-10 pb-2  lg:px-10  bg-lightgrey">
         <Image
           src="/images/aboutus/dots.svg"
           width={100}

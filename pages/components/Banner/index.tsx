@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div
       id="banner-div"
-      className="mx-auto max-w-7xl my-3 py-7 sm:py-10   px-6 lg:px-8 "
+      className="mx-auto max-w-7xl  py-7 sm:py-10   px-6 lg:px-8 "
     >
       <motion.div
         className="w-full"
@@ -26,7 +26,7 @@ const Banner = () => {
           height={10}
         />
       </motion.div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 my-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 my-10">
         {/* COLUMN-1 */}
         <motion.div
           className="w-full"
@@ -38,7 +38,7 @@ const Banner = () => {
           viewport={{ once: true }}
         >
           {" "}
-          <div className="mx-auto sm:mx-0 lg:mt-56">
+          <div className="mx-auto sm:mx-0 lg:mt-80">
             <div className="py-3 text-center lg:text-start">
               <button className="text-primary bg-aqua hover:shadow-xl cursor-context-menu text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider">
                 Consulting Agency
@@ -54,7 +54,7 @@ const Banner = () => {
 
         {/* COLUMN-2 */}
 
-        <div className=" lg:-m-[7rem] lg:ml-2 z-10  hidden lg:block">
+        <div className=" lg:-mb-[5rem] lg:ml-2 z-10  hidden lg:block">
           <Image
             src="/images/banner/banner.webp"
             alt="hero-image"
