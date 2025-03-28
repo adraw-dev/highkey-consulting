@@ -28,7 +28,7 @@ body {
   font-family: Avenir;
 }
 
-.links-navbar{
+.links-navbar {
   font-family: Avenir;
 }
 /* 
@@ -61,7 +61,6 @@ html {
 .navbar {
   border-bottom: 0.5px solid rgba(196, 196, 196, 0.75);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
-  
 }
 
 .hover-underline {
@@ -184,7 +183,9 @@ html {
   background-image: url("/images/wework/elipse.svg"),
     url("/images/wework/vector.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom, top right;
+  background-position:
+    bottom,
+    top right;
 }
 
 .bg-featured {
@@ -217,12 +218,18 @@ html {
   background-image: url("/images/wework/elipse.svg"),
     url("/images/testimonial/boy.svg"), url("/images/testimonial/girl.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 55%, 84% 26%, 12% 18%;
+  background-position:
+    55%,
+    84% 26%,
+    12% 18%;
 }
 
 @media only screen and (max-width: 1400px) {
   .bg-testimonial {
-    background-position: 80%, top right, top left;
+    background-position:
+      80%,
+      top right,
+      top left;
   }
 }
 
@@ -266,10 +273,12 @@ html {
   background-repeat: no-repeat;
 } */
 .bg-joinus {
-  background-image: url("/images/joinus/horn.svg"),
-    url("/images/joinus/paint.svg");
+  background-image: url("/images/joinus/feather.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 84% 109%, 12% 18%;
+  background-size: 14rem;
+  background-position:
+    81% 80%,
+    12% 18%;
 }
 
 .footer-icons {
@@ -421,8 +430,6 @@ html {
   color: #747474;
 }
 
-
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -478,8 +485,6 @@ html {
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {

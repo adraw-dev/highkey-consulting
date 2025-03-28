@@ -10,12 +10,12 @@ const fadeInVariants = {
 const ConsultingPage: React.FC = () => {
   return (
     <div className="bg-gray-100 min-h-screen ">
-      <div className="mx-auto  px-6 lg:px-[20rem] pt-20 lg:pt-28 pb-16   mt-10">
+      <div className="mx-auto  px-6 lg:px-[12rem] pt-20 lg:pt-28 pb-16   mt-10">
         <h1 className="text-4xl font-bold mb-8 text-center">
           CONSULTING SERVICES
         </h1>
         <div className="border-t-2 border-gray-300 my-8"></div>
-        <p className="text-lg mb-8 text-center">
+        <p className="text-xl mb-8 text-center">
           Whether you’re seeking support for a one time project or ongoing
           support we’ve got you covered with experience across industries like
           retail, beauty, entertainment, education, hospitality, food +
@@ -45,7 +45,7 @@ const ConsultingPage: React.FC = () => {
                 "Channel Optimization: Determine the best platforms and tactics to reach your audience, whether through social media, PR, email, or other channels.",
               ]}
               approach="We take a creative, values-based approach to communications, ensuring your strategy not only reflects your brand’s identity but also empowers your organization to stand out in a crowded marketplace. By blending strategic thinking with authentic storytelling, we help you communicate with clarity, confidence, and purpose."
-              imageUrl="/images/consulting/communications.jpg"
+              imageUrl="/images/services/4.jpg"
               reverse={false}
             />
           </motion.div>
@@ -70,7 +70,7 @@ const ConsultingPage: React.FC = () => {
                 "Digital Marketing: Leverage the power of digital platforms—social media, email, SEO, and more—to amplify your story and reach the right people at the right time.",
               ]}
               approach="We take a values-based, creative approach to marketing and storytelling, ensuring your brand’s message is not only heard but felt. By blending strategic thinking with authentic storytelling, we help you connect with your audience on a deeper level, turning customers into advocates and ideas into action."
-              imageUrl="/images/consulting/marketing.jpg"
+              imageUrl="/images/services/marketing.jpg"
               reverse={true}
             />
           </motion.div>
@@ -94,7 +94,7 @@ const ConsultingPage: React.FC = () => {
                 "Illustration & Custom Art: Add a unique touch to your brand with custom illustrations or artwork that sets you apart and reinforces your identity.",
               ]}
               approach="We take a collaborative, values-driven approach to design, ensuring every element we create aligns with your brand’s mission and vision. By combining strategic thinking with artistic flair, we deliver designs that are not only visually stunning but also purposeful and impactful."
-              imageUrl="/images/consulting/graphic-design.jpg"
+              imageUrl="/images/services/event.jpg"
               reverse={false}
             />
           </motion.div>
@@ -120,7 +120,7 @@ const ConsultingPage: React.FC = () => {
                 "Post-Event Engagement: Develop strategies to extend the impact of your activation, from social media campaigns to follow-up content that keeps the conversation going.",
               ]}
               approach="We take a creative, detail-oriented, and audience-focused approach to brand activations and event planning. By blending strategic thinking with innovative design and flawless execution, we ensure your event not only meets but exceeds expectations. Our goal is to create experiences that spark emotion, build community, and amplify your brand’s presence."
-              imageUrl="/images/consulting/event-planning.jpg"
+              imageUrl="/images/services/3.jpg"
               reverse={true}
             />
           </motion.div>
@@ -145,7 +145,7 @@ const ConsultingPage: React.FC = () => {
                 "Brand Experience Design: Map out every touchpoint of your customer journey, ensuring your brand delivers a consistent, memorable, and impactful experience at every interaction.",
               ]}
               approach="We take a holistic, creative, and values-driven approach to brand strategy, ensuring your brand is not only visually compelling but also strategically sound. By blending insights, storytelling, and design, we help you build a brand that inspires trust, loyalty, and growth."
-              imageUrl="/images/consulting/brand-strategy.jpg"
+              imageUrl="/images/services/lgtb.jpg"
               reverse={false}
             />
           </motion.div>
@@ -170,7 +170,7 @@ const ConsultingPage: React.FC = () => {
                 "Networking & Visibility: Develop strategies to increase your visibility, build meaningful connections, and position yourself for speaking engagements, media opportunities, or collaborations.",
               ]}
               approach="We take a personalized, values-driven approach to personal branding, ensuring your brand is authentic, compelling, and aligned with your goals. By combining strategic insights with creative execution, we help you build a personal brand that opens doors, fosters trust, and amplifies your influence."
-              imageUrl="/images/consulting/personal-branding.jpg"
+              imageUrl="/images/services/personal_brand.jpg"
               reverse={true}
             />
           </motion.div>
@@ -196,7 +196,7 @@ const ConsultingPage: React.FC = () => {
                 "Metrics & Accountability: Establish measurable goals and track progress to ensure your DEI initiatives are effective and sustainable.",
               ]}
               approach="We take a holistic, empathetic, and action-oriented approach to DEI, recognizing that every organization’s journey is unique. By combining data-driven insights with practical solutions, we help you create a culture where diversity is celebrated, equity is prioritized, and inclusion is woven into the fabric of your organization."
-              imageUrl="/images/consulting/dei.jpg"
+              imageUrl="/images/services/lgtb.jpg"
               reverse={false}
             />
           </motion.div>
@@ -221,7 +221,7 @@ const ConsultingPage: React.FC = () => {
                 "Purpose-Driven Campaigns: Design campaigns that highlight your brand’s commitment to social and environmental causes, aligning with Gen Z’s passion for making a positive impact.",
               ]}
               approach="We take a data-driven, creative, and values-based approach to Gen Z consumer strategy, ensuring your brand not only captures their attention but also earns their trust and loyalty. By blending cultural insights with innovative marketing tactics, we help you build a genuine connection with this influential generation."
-              imageUrl="/images/consulting/gen-z.jpg"
+              imageUrl="/images/services/gen_z.jpg"
               reverse={true}
             />
           </motion.div>

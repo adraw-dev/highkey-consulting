@@ -4,12 +4,12 @@ import PackageCard from "./package-card/package-card";
 const PackagePage: React.FC = () => {
   return (
     <div className="bg-gray-100 min-h-screen ">
-      <div className="mx-auto  px-6  lg:px-[20rem]  pt-20 lg:pt-28 pb-16 mt-10  ">
+      <div className="mx-auto  px-6  lg:px-[5rem] xl:px-[12rem] pt-20 lg:pt-28  pb-16 mt-10  ">
         <h1 className="text-4xl font-bold mb-8 text-center">
           SERVICE PACKAGES
         </h1>
         <div className="border-t-2 border-gray-300 my-8"></div>
-        <p className="text-lg mb-12 text-center">
+        <p className="text-xl mb-12 text-center ">
           Highkey Consulting has crafted the below service packages to meet the
           needs of all different types of businesses. No project is too big or
           too small. We offer a variety of a la carte services, as well as
@@ -30,16 +30,6 @@ const PackagePage: React.FC = () => {
             ]}
           />
           <PackageCard
-            title="Mid Key"
-            description="Strategic Planning and Expansion for the Established Operation"
-            features={[
-              "One (1 hour) advisory call every 3 weeks (16 calls per year)",
-              "Profit & Loss Quarterly Review (4 reviews per year)",
-              "5 contract, content or document reviews per year (Discounted $85 hourly rate applies)",
-              "Two (1 hour) on-site evaluation visits (one visit every 6 months)",
-            ]}
-          />
-          <PackageCard
             title="High Key"
             description="Strategic Planning and Investment for the Corporate Enterprise"
             features={[
@@ -47,6 +37,16 @@ const PackagePage: React.FC = () => {
               "Bi-Monthly Profit & Loss Review (6 reviews per year)",
               "Unlimited contract, content or document reviews per year (Discounted $75 hourly rate applies)",
               "Four (1 hour) on-site evaluation visits (one visit every 3 months)",
+            ]}
+          />
+          <PackageCard
+            title="Mid Key"
+            description="Strategic Planning and Expansion for the Established Operation"
+            features={[
+              "One (1 hour) advisory call every 3 weeks (16 calls per year)",
+              "Profit & Loss Quarterly Review (4 reviews per year)",
+              "5 contract, content or document reviews per year (Discounted $85 hourly rate applies)",
+              "Two (1 hour) on-site evaluation visits (one visit every 6 months)",
             ]}
           />
         </div>

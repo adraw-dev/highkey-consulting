@@ -1,6 +1,20 @@
-import { FormEvent } from "react";
+import { usePathname } from "next/navigation";
+import { FormEvent, useEffect, useState } from "react";
 
 const Join = () => {
+
+
+  const router = usePathname();
+  const [isMain, setIsMain] = useState(true);
+
+  function isPrincipalPage(path: string) {
+    return path === "/";
+  }
+
+  useEffect(() => {
+    setIsMain(isPrincipalPage(router));
+  }, [router]);
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
@@ -23,10 +37,10 @@ const Join = () => {
   };
 
   return (
-    <div className="bg-joinus  bg-white inset-shadow-sm mb-20">
+    <div className={`bg-joinus  ${isMain ? "bg-white text-black" : "bg-[#1a3b3b]"} inset-shadow-sm mb-20`}>
       <div className="mx-auto max-w-2xl py-20 lg:max-w-7xl  lg:px-8">
         <div className="text-center">
-          <h2 className="text-black text-4xl mx-10 md:mx-0 sm:text-6xl font-bold my-6 leading-10">
+          <h2 className={`${isMain ?"text-black":"text-white"} text-4xl mx-10 md:mx-0 sm:text-6xl font-bold my-6 leading-10`}>
             {" "}
             Schedule a free 30 minute consultation and let’s bring your vision
             to life!

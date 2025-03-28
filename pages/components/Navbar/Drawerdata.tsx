@@ -1,23 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Contactusform from "./Contactus";
+import { navigation } from "./Navbar";
 
-interface NavigationItem {
-  name: string;
-  href: string;
-  current: boolean;
-}
 
-const navigation: NavigationItem[] = [
-  // { name: "Home", href: "/", current: false },
-  { name: "About jennifer", href: "/About", current: false },
-  { name: "Consulting", href: "/Consulting", current: false },
-  { name: "Packages", href: "/Packages", current: false },
-  { name: "Testimonial ", href: "/Testimonial", current: false },
-  { name: "Blog ", href: "/Blog", current: false },
-  { name: "Media Opportunities", href: "/Media", current: false },
-  // { name: "Contact Us", href: "/Contact", current: false },
-];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");

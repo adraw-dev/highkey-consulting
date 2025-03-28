@@ -6,8 +6,7 @@ const Banner = () => {
   return (
     <div
       id="banner-div"
-      className="mx-auto max-w-7xl  py-7 sm:py-10   px-6 lg:px-8 "
-    >
+      className="mx-auto max-w-7xl  py-7 sm:py-10   px-6 lg:px-8 ">
       <motion.div
         className="w-full"
         initial={{ opacity: 0, top: 0 }}

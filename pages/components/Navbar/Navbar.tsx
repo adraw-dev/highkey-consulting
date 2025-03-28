@@ -14,14 +14,14 @@ interface NavigationItem {
   current: boolean;
 }
 
-const navigation: NavigationItem[] = [
+export const navigation: NavigationItem[] = [
   // { name: "Home", href: "/", current: false },
-  { name: "About jennifer", href: "/About", current: false },
+  { name: "About Jennifer", href: "/About", current: false },
   { name: "Consulting", href: "/Consulting", current: false },
   { name: "Packages", href: "/Packages", current: false },
-  { name: "Testimonial ", href: "/Testimonial", current: false },
-  { name: "Blog ", href: "/Blog", current: false },
-  { name: "Media Opportunities", href: "/Media", current: false },
+  // { name: "Testimonial ", href: "/Testimonial", current: false },
+  // { name: "Blog ", href: "/Blog", current: false },
+  // { name: "Media Opportunities", href: "/Media", current: false },
   // { name: "Contact Us", href: "/Contact", current: false },
 ];
 
@@ -37,7 +37,7 @@ const Navbar = () => {
       <>
         <div className=" fixed z-50 w-full p-3 md:p-2 lg:px-0 lg:py-4 bg-white shadow-lg">
           <div className="relative flex h-12 sm:h-20 items-center">
-            <div className="flex flex-1 items-center sm:mx-72 md:mx-32 sm:justify-between">
+            <div className="flex flex-1 items-center sm:mx-72 md:mx-32 lg:mx-8 xl:mx-24 sm:justify-between">
               {/* LOGO */}
 
               <div className="flex flex-shrink-0 items-center">
@@ -57,7 +57,7 @@ const Navbar = () => {
               {/* LINKS */}
 
               <div className="hidden lg:flex items-center  ">
-                <div className="flex justify-end space-x-4">
+                <div className="flex gap-5 justify-end space-x-4">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
@@ -66,7 +66,7 @@ const Navbar = () => {
                         item.current
                           ? "bg-gray-900"
                           : "navlinks hover:text-black",
-                        "px-3 py-4 rounded-md text-lg font-semibold links-navbar" 
+                        "px-3 py-4 rounded-md text-xl font-semibold links-navbar" 
                       )}
                       aria-current={item.href ? "page" : undefined}
                     >

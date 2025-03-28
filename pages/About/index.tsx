@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 const AboutPage: React.FC = () => {
   return (
     <div className="flex justify-center items-center  bg-gray-100 ">
-      <div className="mx-auto  px-6 lg:px-[20rem] 2xl:px-[30rem] pt-20 lg:pt-28 pb-16 mt-10 ">
+      <div className="mx-auto  px-6 lg:px-[12rem] 2xl:px-[17rem] pt-20 lg:pt-28 pb-16 mt-10 ">
         <h1 className="text-4xl font-bold mb-8 text-center ">
           ABOUT JENNIFER
         </h1>
         <div className="border-t-2 border-gray-300 my-8"></div>
-        <p className="mb-4">
+        <p className="mb-4 text-xl">
           Jennifer Velez is the visionary founder of a forward-thinking business
           consultancy that blends professionalism with a touch of feminine
           strength. With a career dedicated to empowering organizations and
@@ -30,7 +30,7 @@ const AboutPage: React.FC = () => {
           height={730}
           className="my-10 mx-auto"
         />
-        <p className="mb-4">
+        <p className="mb-4 text-xl">
           Jennifer’s expertise lies in helping businesses uncover their true
           potential through strategic growth, innovative thinking, and
           purpose-driven leadership.
@@ -46,7 +46,7 @@ const AboutPage: React.FC = () => {
           }}
           viewport={{ once: true }}
         >
-          <div className="flex flex-col mx-auto md:flex-row lg:justify-between  mt-9 gap-16">
+          <div className="flex flex-col mx-auto md:flex-row text-xl lg:justify-between  mt-9 gap-16">
             <Image
               src="/images/aboutus/Jennifer_aboutUS.jpg"
               alt="Jennifer Velez"
