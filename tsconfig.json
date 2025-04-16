@@ -26,6 +26,6 @@
       "components/*": ["components/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/components/Services/components/demo-slider.jsx"],
   "exclude": ["node_modules"]
 }

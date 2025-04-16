@@ -6,29 +6,41 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export ",
+    "email": "email dev --dir pages/emails"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.18",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@react-email/components": "^0.0.33",
     "@rehooks/window-size": "^1.0.2",
     "@types/node": "20.2.0",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.5.2",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
+    "lucide-react": "^0.479.0",
     "motion": "^12.4.7",
     "next": "13.4.2",
     "postcss": "8.4.23",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-slick": "^0.29.0",
+    "resend": "^4.1.2",
     "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^3.0.2",
     "tailwindcss": "3.3.2",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/react-slick": "^0.23.10"
+    "@types/react-slick": "^0.23.10",
+    "react-email": "3.0.7"
   }
 }
