@@ -1,113 +1,121 @@
 import {
-    Body,
-    Button,
-    Container,
-    Head,
-    Hr,
-    Html,
-    Img,
-    Preview,
-    Section,
-    Text,
-  } from '@react-email/components';
-  import * as React from 'react';
-  
-  interface ContactEmailProps {
-    userFirstname: string;
-  }
-  
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : '';
-  
-  export const contactEmail = ({
-    userFirstname,
-  }: ContactEmailProps) => (
-    <Html>
-      <Head />
-      <Body style={main}>
-        <Preview>
-          The sales intelligence platform that helps you uncover qualified leads.
-        </Preview>
-        <Container style={container}>
-          <Img
-            src={`${baseUrl}/static/koala-logo.png`}
-            width="170"
-            height="50"
-            alt="Koala"
-            style={logo}
-          />
-          <Text style={paragraph}>Hi {userFirstname},</Text>
-          <Text style={paragraph}>
-            Welcome to Koala, the sales intelligence platform that helps you
-            uncover qualified leads and close deals faster.
-          </Text>
-          <Section style={btnContainer}>
-            <Button style={button} href="https://getkoala.com">
-              Get started
-            </Button>
-          </Section>
-          <Text style={paragraph}>
-            Best,
-            <br />
-            The Koala team
-          </Text>
-          <Hr style={hr} />
-          <Text style={footer}>
-            470 Noor Ave STE B #1148, South San Francisco, CA 94080
-          </Text>
-        </Container>
-      </Body>
-    </Html>
-  );
-  
-  contactEmail.PreviewProps = {
-    userFirstname: 'Alan',
-  } as ContactEmailProps;
-  
-  export default contactEmail;
-  
-  const main = {
-    backgroundColor: '#ffffff',
-    fontFamily:
-      '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
-  };
-  
-  const container = {
-    margin: '0 auto',
-    padding: '20px 0 48px',
-  };
-  
-  const logo = {
-    margin: '0 auto',
-  };
-  
-  const paragraph = {
-    fontSize: '16px',
-    lineHeight: '26px',
-  };
-  
-  const btnContainer = {
-    textAlign: 'center' as const,
-  };
-  
-  const button = {
-    backgroundColor: '#5F51E8',
-    borderRadius: '3px',
-    color: '#fff',
-    fontSize: '16px',
-    textDecoration: 'none',
-    textAlign: 'center' as const,
-    display: 'block',
-    padding: '12px',
-  };
-  
-  const hr = {
-    borderColor: '#cccccc',
-    margin: '20px 0',
-  };
-  
-  const footer = {
-    color: '#8898aa',
-    fontSize: '12px',
-  };
+  Body,
+  Button,
+  Container,
+  Head,
+  Hr,
+  Html,
+  Img,
+  Preview,
+  Section,
+  Text,
+} from "@react-email/components";
+import * as React from "react";
+
+interface ContactEmailProps {
+  userFirstname: string;
+}
+
+
+
+export const contactEmail = ({ userFirstname }: ContactEmailProps) => (
+  <Html>
+    <Head />
+    <Body style={main}>
+      <Preview>
+      Hello {userFirstname},
+      Thank you for scheduling a 30‑minute consultation with High Key Consulting. We appreciate your interest...
+      </Preview>
+      <Container style={container}>
+        <Img
+          src={`https://jenniferlvelez.com/images/logo.png`}
+          width="170"
+          height="50"
+          alt="Koala"
+          style={logo}
+        />
+
+        <Text style={paragraph}>Hello <b>{userFirstname}</b>,</Text>
+        <Text style={paragraph}>
+          Thank you for scheduling a 30‑minute consultation with High Key
+          Consulting. We appreciate your interest in exploring how our expertise
+          can help drive your business forward.
+        </Text>
+        <Text style={paragraph}>
+          One of our senior consultants will review the details you provided and
+          reach out shortly to confirm your appointment and ensure we’re fully
+          prepared to address your objectives. In the meantime, feel free to
+          reply to this email if there’s any specific topic or question you’d
+          like us to cover during our call.
+        </Text>
+        <Text style={paragraph}>
+          We look forward to connecting with you and delivering actionable
+          insights tailored to your needs.
+        </Text>
+        {/* <Section style={btnContainer}>
+          <Button style={button} href="https://getkoala.com">
+            Get started
+          </Button>
+        </Section> */}
+        <Text style={paragraph}>
+          Best regards,
+          <br />
+          The High Key Consulting Team
+        </Text>
+        <Hr style={hr} />
+    
+      </Container>
+    </Body>
+  </Html>
+);
+
+contactEmail.PreviewProps = {
+  userFirstname: "Alan",
+} as ContactEmailProps;
+
+export default contactEmail;
+
+const main = {
+  backgroundColor: "#ffffff",
+  fontFamily:
+    '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+};
+
+const container = {
+  margin: "0 auto",
+  padding: "20px 0 48px",
+};
+
+const logo = {
+  margin: "0 auto",
+};
+
+const paragraph = {
+  fontSize: "16px",
+  lineHeight: "26px",
+};
+
+const btnContainer = {
+  textAlign: "center" as const,
+};
+
+const button = {
+  backgroundColor: "#5F51E8",
+  borderRadius: "3px",
+  color: "#fff",
+  fontSize: "16px",
+  textDecoration: "none",
+  textAlign: "center" as const,
+  display: "block",
+  padding: "12px",
+};
+
+const hr = {
+  borderColor: "#cccccc",
+  margin: "20px 0",
+};
+
+const footer = {
+  color: "#8898aa",
+  fontSize: "12px",
+};

@@ -9,17 +9,26 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
-    const { name, email } = req.query; // Usar req.query para obtener parámetros de consulta en solicitudes GET
-debugger
+    const { name, email } = req.body;
+    debugger;
     try {
-      await resend.emails.send({
-        from: "contact@jenniferlvelez.com",
-        to: "alejandrovelez74@gmail.com",
-        subject: "hello world",
-        react: EmailTemplate({ userFirstname: name as string }),
+      const { data, error } = await resend.emails.send({
+        from: "jennifer <jennifer@jenniferlvelez.com>",
+        // from: "jennifer@jenniferlvelez.com",
+        to: ["alejandrovelez74@gmail.com"],
+        subject: "Hello world",
+        react: EmailTemplate({ userFirstname: name }),
       });
-      debugger;
-      res.status(200).json({ status: true, message: `Email sent to ${email}` });
+
+      if (error) {
+        return res.status(500).json({ status: 500, error: error });
+        // return Response.json({ error }, { status: 500 });
+      }
+
+      // return Response.json(data);
+      res
+        .status(200)
+        .json({ status: true, message: `Email sent to ${email}, ${data}` });
     } catch (error) {
       res.status(500).json({ status: false, error: (error as any)?.message });
     }

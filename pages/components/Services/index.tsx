@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
+import AutoPlayMethods from "./components/demo-slider";
 import ServiceCard, { CardServicesProps } from "./components/service-cards";
-import { useState } from "react";
 
 const services: CardServicesProps[] = [
   {
@@ -22,6 +22,7 @@ const services: CardServicesProps[] = [
     ),
     description: "",
     imageUrl: "/images/services/strategy.jpg",
+    url: "/Consulting/communications-strategy",
   },
   {
     title: (
@@ -39,6 +40,7 @@ const services: CardServicesProps[] = [
     description: "",
     imageUrl: "/images/services/marketing.jpg",
     postionImage: "top",
+    url: "/Consulting/marketing-storytelling",
   },
   {
     title: (
@@ -56,6 +58,7 @@ const services: CardServicesProps[] = [
     ),
     description: "",
     imageUrl: "/images/services/lgtb.jpg",
+    url: "/Consulting/diversity-equity-inclusion",
   },
   {
     title: (
@@ -73,7 +76,7 @@ const services: CardServicesProps[] = [
     ),
     description: "",
     imageUrl: "/images/services/event.jpg",
-  },
+    url: "/Consulting/brand-activations-event-planning",},
   {
     title: (
       <p>
@@ -90,6 +93,7 @@ const services: CardServicesProps[] = [
     ),
     description: "",
     imageUrl: "/images/services/brand.jpg",
+    url: "/Consulting/brand-strategy",
   },
   {
     title: (
@@ -107,6 +111,7 @@ const services: CardServicesProps[] = [
     ),
     description: "",
     imageUrl: "/images/services/personal_brand.jpg",
+    url: "/Consulting/personal-branding",
   },
   {
     title: (
@@ -125,34 +130,11 @@ const services: CardServicesProps[] = [
     description: "",
     imageUrl: "/images/services/gen_z.jpg",
     postionImage: "top",
+    url: "/Consulting/gen-z-consumer-strategy",
   },
 ];
 
 const Services = () => {
-  const [step, setStep] = useState(0);
-  const goNext = () => {
-    const nextStep = step + 300;
-    setStep(nextStep);
-
-    document.getElementById("services-container")?.scrollBy({
-      left: step,
-      behavior: "smooth",
-    });
-  };
-
-  const goBack = () => {
-    const nextStep = step + -300;
-
-    if (nextStep < 0) {
-      return;
-    }
-    setStep(nextStep);
-    document.getElementById("services-container")?.scrollBy({
-      left: -300,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <div className="w-full">
       <Image
@@ -164,55 +146,18 @@ const Services = () => {
       />
       <div className="mx-auto w-full lg:w-[80%] px-2 mt-32   sm:py-4 lg:px-8 rounded-3xl">
         <div className="w-full mx-auto flex justify-center">
-          <h2 className="text-center font-semibold text-5xl  text-lightgrey">
-            WHAT WE DO!
+          <h2 className="text-center font-semibold text-5xl  mb-10 text-lightgrey">
+            Ready to take your business <br /> to the next level?
           </h2>
         </div>
-        <div className="relative">
-          <button
-            onClick={() => {
-              goBack();
-            }}
-            className="absolute left-0 hidden top-1/2 transform md:block -translate-y-1/2 bg-lightgrey text-white p-2 h-10 w-10 rounded-full cursor-pointer shadow-lg"
-          >
-            <Image
-              src="/images/services/left_arrow.svg"
-              alt={""}
-              width={20}
-              height={20}
-            />
-          </button>
-          <div
-            id="services-container"
-            className="flex flex-row flex-nowrap overflow-x-auto my-16 lg:mx-5 gap-5 scroll-smooth snap-x snap-mandatory [&::-webkit-scrollbar]:w-2
-        [&::-webkit-scrollbar-track]:rounded-full
-        [&::-webkit-scrollbar-track]:bg-gray-100
-        [&::-webkit-scrollbar-thumb]:rounded-full
-        [&::-webkit-scrollbar-thumb]:bg-gray-300
-        dark:[&::-webkit-scrollbar-track]:bg-neutral-700
-        dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
-          >
-            {/* COLUMN-1 */}
-            {services.map((service, index) => (
-              <div className="snap-center" key={index}>
-                <ServiceCard key={index} {...service} />
-              </div>
-            ))}
-          </div>
-          <button
-            onClick={() => {
-              goNext();
-            }}
-            className="absolute right-0 top-1/2 hidden transform md:block -translate-y-1/2 bg-lightgrey text-white p-3 h-10 w-10 rounded-full cursor-pointer shadow-lg"
-          >
-            <Image
-              src="/images/services/right_arrow.svg"
-              alt={""}
-              width={20}
-              height={20}
-            />
-          </button>
-        </div>
+
+        <AutoPlayMethods>
+          {services.map((service, index) => (
+            <div className="snap-center " key={index}>
+              <ServiceCard key={index} {...service} />
+            </div>
+          ))}
+        </AutoPlayMethods>
       </div>
     </div>
   );

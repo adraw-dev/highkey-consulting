@@ -1,6 +1,6 @@
+import Head from "next/head";
 import React from "react";
 import PackageCard from "./package-card/package-card";
-import Head from "next/head";
 
 const PackagePage: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const PackagePage: React.FC = () => {
       </Head>
 
       <div className="bg-gray-100 min-h-screen ">
-        <div className="mx-auto  px-6  lg:px-[5rem] xl:px-[12rem] pt-20 lg:pt-28  pb-16 mt-10  ">
+        <div className="mx-auto  px-6  lg:px-[5rem] xl:px-[5rem] pt-20 lg:pt-28  pb-16 mt-10  ">
           <h1 className="text-4xl font-bold mb-8 text-center">
             SERVICE PACKAGES
           </h1>
@@ -26,6 +26,7 @@ const PackagePage: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
             <PackageCard
               title="Low Key"
               description="Strategic Planning and Growth for the Individual or Small Team"
@@ -37,16 +38,6 @@ const PackagePage: React.FC = () => {
               ]}
             />
             <PackageCard
-              title="High Key"
-              description="Strategic Planning and Investment for the Corporate Enterprise"
-              features={[
-                "Two (1 hour) advisory call every 4 weeks (24 calls per year)",
-                "Bi-Monthly Profit & Loss Review (6 reviews per year)",
-                "Unlimited contract, content or document reviews per year (Discounted $75 hourly rate applies)",
-                "Four (1 hour) on-site evaluation visits (one visit every 3 months)",
-              ]}
-            />
-            <PackageCard
               title="Mid Key"
               description="Strategic Planning and Expansion for the Established Operation"
               features={[
@@ -54,6 +45,17 @@ const PackagePage: React.FC = () => {
                 "Profit & Loss Quarterly Review (4 reviews per year)",
                 "5 contract, content or document reviews per year (Discounted $85 hourly rate applies)",
                 "Two (1 hour) on-site evaluation visits (one visit every 6 months)",
+              ]}
+              top
+            />
+            <PackageCard
+              title="High Key"
+              description="Strategic Planning and Investment for the Corporate Enterprise"
+              features={[
+                "Two (1 hour) advisory call every 4 weeks (24 calls per year)",
+                "Bi-Monthly Profit & Loss Review (6 reviews per year)",
+                "Unlimited contract, content or document reviews per year (Discounted $75 hourly rate applies)",
+                "Four (1 hour) on-site evaluation visits (one visit every 3 months)",
               ]}
             />
           </div>

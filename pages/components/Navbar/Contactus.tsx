@@ -1,7 +1,7 @@
 "use client";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
-import { Fragment, useState } from "react";
+import { Fragment, useState, FormEvent } from "react";
 
 const Contactusform = () => {
   let [isOpen, setIsOpen] = useState(false);
@@ -17,16 +17,37 @@ const Contactusform = () => {
   };
 
   const handleClick = () => {
-    alert(
-      `Name: ${inputValues.input1}, Email-address: ${inputValues.input2}`
-    );
-    setIsOpen(false);
+    alert(`Name: ${inputValues.input1}, Email-address: ${inputValues.input2}`);
   };
 
   // FORM SUBMIT
-  const handleSubmit = (event: { preventDefault: () => void }) => {
-    event.preventDefault();
-    // handle form submission
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const name = (form[0] as HTMLInputElement).value;
+    const email = (form[1] as HTMLInputElement).value;
+    const service = (form[2] as HTMLInputElement).value;
+
+    console.log(name, email, service);
+
+    if (name === "" || email === "" || service === "") {
+      alert("Please fill in all fields");
+    } else {
+      await fetch("/api/email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, service }),
+      }).then((response) => {
+        if (response.ok) {
+          alert("Email sent successfully!");
+        } else {
+          alert("Error sending email. Please try again later.");
+        }
+      });
+    }
+    // setIsOpen(false);
   };
 
   const isDisabled = Object.values(inputValues).some((value) => value === "");
@@ -89,7 +110,7 @@ const Contactusform = () => {
                       />
                     </div>
                     <p className="mb-8 lg:mb-16 mt-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-                      Contact us now? Want to send us a feedback?
+                      Contact us now
                     </p>
                     <form
                       action="#"
@@ -111,7 +132,7 @@ const Contactusform = () => {
                           type="text"
                           autoComplete="current-password"
                           required
-                          className="relative block w-full appearance-none  rounded-md border border-linegrey px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                          className="relative block w-full appearance-none  rounded-md border border-gray px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                           placeholder="Name..."
                         />
                       </div>
@@ -130,16 +151,49 @@ const Contactusform = () => {
                           type="email"
                           autoComplete="current-password"
                           required
-                          className="relative block w-full appearance-none  rounded-md border border-linegrey px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                          className="relative block w-full appearance-none  rounded-md border border-gray px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                           placeholder="xyz@email.com"
                         />
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="service"
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                        >
+                          Choose a service
+                        </label>
+                        <select
+                          id="service"
+                          className="relative block w-full appearance-none  rounded-md border border-gray px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                        >
+                          <option value="COMMUNICATIONS STRATEGY">
+                            COMMUNICATIONS STRATEGY
+                          </option>
+                          <option value="MARKETING/STORYTELLING">
+                            MARKETING/STORYTELLING
+                          </option>
+                          <option value="GRAPHIC DESIGN">GRAPHIC DESIGN</option>
+                          <option value="BRAND ACTIVATIONS AND EVENT PLANNING">
+                            BRAND ACTIVATIONS AND EVENT PLANNING
+                          </option>
+                          <option value="BRAND STRATEGY">BRAND STRATEGY</option>
+                          <option value="PERSONAL BRANDING">
+                            PERSONAL BRANDING
+                          </option>
+                          <option value="DIVERSITY, EQUITY + INCLUSION">
+                            DIVERSITY, EQUITY + INCLUSION
+                          </option>
+                          <option value="GEN Z CONSUMER STRATEGY">
+                            GEN Z CONSUMER STRATEGY
+                          </option>
+                        </select>
                       </div>
 
                       <button
                         type="submit"
                         onClick={handleClick}
                         disabled={isDisabled}
-                        className="py-3 px-5 text-sm disabled:opacity-50 font-medium w-full text-center text-white rounded-lg bg-blue focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                        className="py-3 px-5 text-sm disabled:opacity-50 font-medium w-full text-center text-white rounded-lg bg-darkpurple hover:bg-hopurple focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                       >
                         Send message
                       </button>

@@ -4,6 +4,7 @@ import { Bars3Icon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { usePathname } from "next/navigation";
 import Contactusform from "./Contactus";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
@@ -15,7 +16,7 @@ interface NavigationItem {
 }
 
 export const navigation: NavigationItem[] = [
-  // { name: "Home", href: "/", current: false },
+  { name: "Home", href: "/", current: false },
   { name: "About Jennifer", href: "/About", current: false },
   { name: "Consulting", href: "/Consulting", current: false },
   { name: "Packages", href: "/Packages", current: false },
@@ -30,7 +31,19 @@ function classNames(...classes: string[]) {
 }
 
 const Navbar = () => {
+
+  const path = usePathname()
   const [isOpen, setIsOpen] = React.useState(false);
+  const [navigations, setNavigations] = React.useState(navigation);
+
+
+  React.useEffect(() => {
+    const newNavigation = navigation.map((item) => ({
+      ...item,
+      current: item.href === path || path.startsWith(`${item.href}/`),
+    }));
+    setNavigations(newNavigation);
+  }, [ path]);
 
   return (
     <Disclosure as="nav" className="navbar">
@@ -58,15 +71,15 @@ const Navbar = () => {
 
               <div className="hidden lg:flex items-center  ">
                 <div className="flex gap-5 justify-end space-x-4">
-                  {navigation.map((item) => (
+                  {navigations.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
                       className={classNames(
                         item.current
-                          ? "bg-gray-900"
+                          ? "text-aqua"
                           : "navlinks hover:text-black",
-                        "px-3 py-4 rounded-md text-xl font-semibold links-navbar" 
+                        "px-3 py-4 rounded-md text-xl font-semibold links-navbar"
                       )}
                       aria-current={item.href ? "page" : undefined}
                     >

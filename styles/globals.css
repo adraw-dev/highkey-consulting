@@ -99,6 +99,12 @@ html {
   top: 95%;
   position: absolute;
 }
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
 
 @media only screen and (max-width: 1024px) {
   .preline:before {
@@ -224,12 +230,18 @@ html {
     12% 18%;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1440px) {
   .bg-testimonial {
     background-position:
       80%,
       top right,
       top left;
+  }
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
   }
 }
 
@@ -277,8 +289,8 @@ html {
   background-repeat: no-repeat, no-repeat;
   background-size: 14rem;
   background-position:
-    81% 80%,
-    12% 18%;
+    97% 42%,
+    23% 1%;
 }
 
 .footer-icons {
@@ -335,7 +347,7 @@ html {
 }
 
 .joinButton {
-  padding: 10px 110px;
+  padding: 5px 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,7 +355,7 @@ html {
 
 @media only screen and (max-width: 1023px) {
   .joinButton {
-    padding: 20px 92px;
+    padding: 5px 92px;
   }
 }
 

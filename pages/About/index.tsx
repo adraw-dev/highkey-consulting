@@ -12,7 +12,7 @@ const AboutPage: React.FC = () => {
       </Head>
 
       <div className="flex justify-center items-center  bg-gray-100 ">
-        <div className="mx-auto  px-6 lg:px-[12rem] 2xl:px-[17rem] pt-20 lg:pt-28 pb-16 mt-10 ">
+        <div className="mx-auto  px-6 lg:px-[5rem] 2xl:px-[17rem] pt-20 lg:pt-28 pb-16 mt-10 ">
           <h1 className="text-4xl font-bold mb-8 text-center ">
             ABOUT JENNIFER
           </h1>

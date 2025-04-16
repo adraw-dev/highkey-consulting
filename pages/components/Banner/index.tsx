@@ -18,7 +18,7 @@ const Banner = () => {
         viewport={{ once: true }}
       >
         <Image
-          className="absolute -top-36 left-1/3 -z-10 w-2/3 lg:block hidden"
+          className="absolute -top-20 left-1/3 -z-10 lg:w-10/12 xl:w-9/12  lg:block xl:-top-36 hidden"
           src="/images/banner/snake.svg"
           alt="hero-image"
           width={500}
@@ -37,7 +37,7 @@ const Banner = () => {
           viewport={{ once: true }}
         >
           {" "}
-          <div className="mx-auto sm:mx-0 lg:mt-80">
+          <div className="mx-auto sm:mx-10 sm:mt-10  lg:mt-60 xl:mt-80">
             <div className="py-3 text-center lg:text-start">
               <button className="text-primary bg-aqua hover:shadow-xl cursor-context-menu text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider">
                 Consulting Agency
