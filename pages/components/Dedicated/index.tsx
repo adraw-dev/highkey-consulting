@@ -40,16 +40,16 @@ const Dedicated = () => {
           >
             {" "}
             <div className="relative text-white">
-              <h2 className="text-4xl lg:text-65xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start">
+              <h2 className="text-4xl lg:text-65xl pt-4  font-semibold  md:font-bold sm:leading-tight mt-5 text-center lg:text-start">
                 Be transparent about who you are, what your brand is, its
                 values, and practices.{" "}
               </h2>
-              <p className="font-medium text-white text-2xl mt-5 text-center lg:text-start">
+              <p className="font-thin text-white text-2xl mt-5 text-center lg:text-start">
                 Showcase the human side of your company, highlight real stories,
                 and share behind the scenes content. Allow people to connect
                 with you so they feel like they can connect to your mission.
               </p>
-              <p className="text-2xl font-semibold mt-12 lg:ml-32 preline text-center lg:text-start">
+              <p className="text-2xl font-medium md:font-semibold mt-12 lg:ml-32 preline text-center lg:text-start">
                 {" "}
                 Jennifer Velez, CEO of HighKey Consulting
               </p>

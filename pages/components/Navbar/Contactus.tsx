@@ -188,6 +188,13 @@ const Contactusform = () => {
                           </option>
                         </select>
                       </div>
+                      <div>
+                        <textarea
+                          className="my-4 py-4 sm:pl-6 w-full lg:text-xl text-black sm:rounded-2xl bg-[#fdfdfd] border pl-1 focus:outline-none bg-emailbg focus:text-black"
+                          placeholder="Your message"
+                          rows={4}
+                        ></textarea>
+                      </div>
 
                       <button
                         type="submit"

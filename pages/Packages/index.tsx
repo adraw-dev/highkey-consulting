@@ -24,11 +24,9 @@ const PackagePage: React.FC = () => {
             reach out to us with your inquiry, and we can put together a plan to
             suit your needs. We love an individualized approach.
           </p>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
             <PackageCard
-              title="Low Key"
+              title="low Key"
               description="Strategic Planning and Growth for the Individual or Small Team"
               features={[
                 "One (1 hour) advisory call every month (12 calls per year)",
@@ -38,7 +36,7 @@ const PackagePage: React.FC = () => {
               ]}
             />
             <PackageCard
-              title="Mid Key"
+              title="mid Key"
               description="Strategic Planning and Expansion for the Established Operation"
               features={[
                 "One (1 hour) advisory call every 3 weeks (16 calls per year)",
@@ -49,7 +47,7 @@ const PackagePage: React.FC = () => {
               top
             />
             <PackageCard
-              title="High Key"
+              title="high Key"
               description="Strategic Planning and Investment for the Corporate Enterprise"
               features={[
                 "Two (1 hour) advisory call every 4 weeks (24 calls per year)",
@@ -59,6 +57,7 @@ const PackagePage: React.FC = () => {
               ]}
             />
           </div>
+          {/* add a image with the title to pick my brain */}
         </div>
       </div>
     </>

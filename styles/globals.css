@@ -425,7 +425,7 @@ html {
   opacity: 1;
 }
 
-.imageContainer:hover > a > button {
+.imageContainer:hover  > button {
   display: block;
 }
 

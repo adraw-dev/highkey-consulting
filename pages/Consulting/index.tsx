@@ -3,10 +3,6 @@ import Head from "next/head";
 import React from "react";
 import ServiceSection from "./service-section/service-setion";
 
-const fadeInVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 1 } },
-};
 const ConsultingPage: React.FC = () => {
   return (
     <>
@@ -16,7 +12,7 @@ const ConsultingPage: React.FC = () => {
       </Head>
 
       <div className="bg-gray-100 min-h-screen ">
-        <div className="mx-auto  px-6 lg:px-[5rem] pt-20 lg:pt-28 pb-16 mt-10">
+        <div className="mx-auto  px-6 lg:px-[5rem] xl:px-[12rem] pt-20 lg:pt-28 pb-16 mt-10">
           <h1 className="text-4xl font-bold mb-8 text-center">
             CONSULTING SERVICES
           </h1>

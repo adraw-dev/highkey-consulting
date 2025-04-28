@@ -17,7 +17,7 @@ const AboutPage: React.FC = () => {
             ABOUT JENNIFER
           </h1>
           <div className="border-t-2 border-gray-300 my-8"></div>
-          <p className="mb-4 text-xl">
+          <p className="mb-4 text-xl text-center">
             Jennifer Velez is the visionary founder of a forward-thinking
             business consultancy that blends professionalism with a touch of
             feminine strength. With a career dedicated to empowering
@@ -36,7 +36,7 @@ const AboutPage: React.FC = () => {
             alt="Jennifer Velez"
             width={1000}
             height={730}
-            className="my-10 mx-auto"
+            className="my-10 mx-auto rounded-lg"
           />
           <p className="mb-4 text-xl">
             Jennifer’s expertise lies in helping businesses uncover their true
@@ -60,7 +60,7 @@ const AboutPage: React.FC = () => {
                 alt="Jennifer Velez"
                 width={300}
                 height={200}
-                className="mx-auto md:mx-0"
+                className="mx-auto md:mx-0 rounded-lg"
               />
               <div>
                 <p className="mb-4">

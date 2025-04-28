@@ -31,19 +31,19 @@ function classNames(...classes: string[]) {
 }
 
 const Navbar = () => {
-
-  const path = usePathname()
+  const path = usePathname();
   const [isOpen, setIsOpen] = React.useState(false);
   const [navigations, setNavigations] = React.useState(navigation);
 
-
   React.useEffect(() => {
-    const newNavigation = navigation.map((item) => ({
-      ...item,
-      current: item.href === path || path.startsWith(`${item.href}/`),
-    }));
-    setNavigations(newNavigation);
-  }, [ path]);
+    if (path) {
+      const newNavigation = navigation.map((item) => ({
+        ...item,
+        current: item.href === path || path.startsWith(`${item.href}/`),
+      }));
+      setNavigations(newNavigation);
+    }
+  }, [path]);
 
   return (
     <Disclosure as="nav" className="navbar">

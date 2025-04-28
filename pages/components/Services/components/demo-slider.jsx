@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 
-
 const AutoPlayMethods = ({ children }) => {
   let sliderRef = useRef(null);
 
@@ -10,12 +9,12 @@ const AutoPlayMethods = ({ children }) => {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
+    dots: true,
     autoplaySpeed: 2000,
     centerMode: true,
     pauseOnHover: true,
     centerPadding: "60px",
     responsive: [
-  
       {
         breakpoint: 820,
         settings: {
@@ -32,7 +31,6 @@ const AutoPlayMethods = ({ children }) => {
           slidesToScroll: 2,
           infinite: true,
           arrows: false,
-          
         },
       },
       {

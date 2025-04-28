@@ -18,13 +18,18 @@ const products: ProductType[] = [
   {
     id: 1,
     section: "",
-    link: ["Home", "About jennifer", "Consulting", "Packages"],
+    link: ["Home", "About jennifer"],
   },
   {
     id: 2,
     section: "     ",
-    link: ["Testimonial", "Blog", "Contact Us"],
+    link: ["Consulting", "Packages"],
   },
+  // {
+  //   id: 2,
+  //   section: "     ",
+  //   link: ["Testimonial", "Blog", "Contact Us"],
+  // },
 ];
 
 const footer = () => {
