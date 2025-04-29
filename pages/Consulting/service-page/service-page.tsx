@@ -19,7 +19,7 @@ const ServicePage = (props: ServicePageProps) => {
       key={props.slug}
       className="bg-gray-100 min-h-screen text-justify "
     >
-      <h1 className="text-4xl font-bold mb-8 text-center">{props.title}</h1>
+      {/* <h1 className="text-4xl font-bold mb-8 text-center">{props.title}</h1> */}
       <div className="h-[20rem]   w-full rounded-2xl my-10 ">
         <SimpleParallax
           // overflow

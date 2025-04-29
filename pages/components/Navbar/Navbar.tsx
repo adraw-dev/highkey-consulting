@@ -48,9 +48,9 @@ const Navbar = () => {
   return (
     <Disclosure as="nav" className="navbar">
       <>
-        <div className=" fixed z-50 w-full p-3 md:p-2 lg:px-0 lg:py-4 bg-white shadow-lg">
+        <div className=" fixed z-50 w-full p-3 md:p-2 lg:px-0 lg:py-4 bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] shadow-lg">
           <div className="relative flex h-12 sm:h-20 items-center">
-            <div className="flex flex-1 items-center sm:mx-72 md:mx-32 lg:mx-8 xl:mx-24 sm:justify-between">
+            <div className="flex flex-1 items-center sm:mx-10 md:mx-12 lg:mx-8 xl:mx-24 sm:justify-between">
               {/* LOGO */}
 
               <div className="flex flex-shrink-0 items-center">
@@ -59,7 +59,7 @@ const Navbar = () => {
                   className="text-2xl sm:text-4xl font-semibold text-black"
                 >
                   <Image
-                    src="/images/navbar/HIGHKEY-logo-green.png"
+                    src="/images/navbar/HIGHKEY-logo-white.png"
                     alt="hero-image"
                     width={200}
                     height={50}
@@ -78,8 +78,8 @@ const Navbar = () => {
                       className={classNames(
                         item.current
                           ? "text-aqua"
-                          : "navlinks hover:text-black",
-                        "px-3 py-4 rounded-md text-xl font-semibold links-navbar"
+                          : "navlinks hover:text-",
+                        "px-3 py-4  rounded-md text-xl font-semibold links-navbar"
                       )}
                       aria-current={item.href ? "page" : undefined}
                     >
@@ -96,9 +96,9 @@ const Navbar = () => {
 
             {/* DRAWER ICON */}
 
-            <div className="block lg:hidden">
+            <div className="block lg:hidden cursor-pointer ">
               <Bars3Icon
-                className="block h-6 w-6"
+                className="block h-6 w-6 text-white"
                 aria-hidden="true"
                 onClick={() => setIsOpen(true)}
               />

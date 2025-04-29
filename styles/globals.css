@@ -24,7 +24,8 @@ h1 {
 
 body {
   margin: 0;
-  background-color: #1a3b3b;
+  background: linear-gradient(134.66deg, #1a3b3b 6.35%, #154643 95.93%);
+
   font-family: Avenir;
 }
 
@@ -135,11 +136,14 @@ html {
 }
 
 .navbutton {
-  border: 1px solid rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.navbutton:hover {
+  border-color: rgba(141, 26, 129, 0.35);
 }
 
 .navlinks {
-  color: rgba(0, 0, 0, 0.75);
+  color: rgb(255, 255, 255);
 }
 
 .bg-digital {
@@ -425,7 +429,7 @@ html {
   opacity: 1;
 }
 
-.imageContainer:hover  > button {
+.imageContainer:hover > button {
   display: block;
 }
 

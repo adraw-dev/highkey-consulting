@@ -11,12 +11,30 @@ const AboutPage: React.FC = () => {
         <link rel="icon" href="/ico-feather.ico" sizes="48x48" />
       </Head>
 
+      <div className="bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] h-52 w-full pt-20 flex justify-center  relative">
+        <Image
+          src="/images/navbar/squares.svg"
+          alt="hero-image"
+          width={155.5335693359375}
+          height={168}
+          className="absolute left-0 hidden md:block"
+        />
+
+        <h2 className="text-4xl text-white font-bold mb-8 text-center z-10">
+          About Us
+        </h2>
+
+        <Image
+          src="/images/navbar/squares.svg"
+          alt="hero-image"
+          width={155.5335693359375}
+          height={168}
+          className="absolute right-0 hidden md:block"
+        />
+      </div>
+
       <div className="flex justify-center items-center  bg-gray-100 ">
-        <div className="mx-auto  px-6 lg:px-[5rem] 2xl:px-[17rem] pt-20 lg:pt-28 pb-16 mt-10 ">
-          <h1 className="text-4xl font-bold mb-8 text-center ">
-            ABOUT JENNIFER
-          </h1>
-          <div className="border-t-2 border-gray-300 my-8"></div>
+        <div className="mx-auto  px-6 lg:px-[5rem] 2xl:px-[17rem] pt-20  ">
           <p className="mb-4 text-xl text-center">
             Jennifer Velez is the visionary founder of a forward-thinking
             business consultancy that blends professionalism with a touch of
