@@ -66,7 +66,7 @@ const Contactusform = () => {
         <div className="hidden lg:block">
           <button
             type="button"
-            className="justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-darkpurple hover:text-white"
+            className="justify-end text-xl font-semibold text-white bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-darkpurple hover:text-white"
             onClick={openModal}
           >
             Contact Us
@@ -99,7 +99,7 @@ const Contactusform = () => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <div className="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
                     <div className="flex flex-shrink-0 items-center justify-center">
                       <Image
@@ -109,8 +109,14 @@ const Contactusform = () => {
                         height={50}
                       />
                     </div>
-                    <p className="mb-8 lg:mb-16 mt-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-                      Contact us now
+                    <p className="mb-2 lg:mb-5 mt-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+                      Do you want to take a creative, authentic, values-based
+                      approach to growing your business? <br />
+                      Have a creative project and are not quite ready to scale
+                      your team?
+                      <br />
+                      Schedule a free consultation and let’s bring your vision
+                      to life!
                     </p>
                     <form
                       action="#"
@@ -187,6 +193,13 @@ const Contactusform = () => {
                             GEN Z CONSUMER STRATEGY
                           </option>
                         </select>
+                      </div>
+                      <div>
+                        <textarea
+                          className="my-4 py-4 sm:pl-6 w-full lg:text-xl text-black sm:rounded-2xl bg-[#fdfdfd] border pl-1 focus:outline-none bg-emailbg focus:text-black"
+                          placeholder="Your message"
+                          rows={4}
+                        ></textarea>
                       </div>
 
                       <button

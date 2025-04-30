@@ -65,7 +65,7 @@ const AboutMe = () => {
                 className="flex flex-col flex-grow clear-left md:w-[40rem] lg:w-full "
                 style={{ clear: "left" }}
               >
-                <p className="text-justify mt-[10%] text-lg  font-bold">
+                <p className="text-justify mt-[10%] text-lg  md:font-bold">
                   At highkey consulting, we’re more than a consultancy -
                   we&apos;re dedicated partners in success. Led by visionary
                   founder, Jennifer Velez (she/her), we blend inclusive
