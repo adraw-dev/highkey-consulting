@@ -12,7 +12,7 @@ const PickBrain: React.FC = () => {
             alt="hero-image"
             width={56}
             height={56}
-            //   className="absolute left-0 hidden md:block"
+            className="opacity-40"
           />
           <h2 className="gradient-text text-65xl font-bold  text-center z-10">
             Pick Brain
