@@ -17,7 +17,7 @@ export default async function handler(
         // from: "jennifer@jenniferlvelez.com",
         to: [email],
 
-        subject: "Hello world",
+        subject: "Hello name from High Key Consulting",
         react: EmailTemplate({ userFirstname: name, service, message: Message }),
       });
 
