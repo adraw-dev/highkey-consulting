@@ -16,6 +16,7 @@ export default async function handler(
         from: "jennifer <jennifer@jenniferlvelez.com>",
         // from: "jennifer@jenniferlvelez.com",
         to: ["alejandrovelez74@gmail.com"],
+        
         subject: "Hello world",
         react: EmailTemplate({ userFirstname: name }),
       });
