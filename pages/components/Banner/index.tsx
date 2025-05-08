@@ -18,7 +18,7 @@ const Banner = () => {
         viewport={{ once: true }}
       >
         <Image
-          className="absolute -top-20 left-[40%]  -z-10 lg:w-10/12 xl:w-[75%]  lg:block xl:-top-36 hidden"
+          className="absolute -top- left-[34%]  -z-10 lg:w-[65%] xl:w-[60%]  lg:block xl:left-[40%] xl:-top-12 hidden"
           src="/images/banner/snake.svg"
           alt="hero-image"
           width={500}

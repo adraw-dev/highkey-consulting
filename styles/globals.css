@@ -72,6 +72,14 @@ html {
   align-items: center;
 }
 
+.gradient-text {
+  font-size: 3.4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #FFFFFF 0%, #8D1A81 55.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .hover-underline:after {
   content: "";
   position: absolute;
