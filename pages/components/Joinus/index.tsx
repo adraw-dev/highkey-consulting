@@ -1,5 +1,6 @@
 import { usePathname } from "next/navigation";
 import { FormEvent, useEffect, useState } from "react";
+import { toast } from "sonner";
 
 const Join = () => {
   const router = usePathname();
@@ -19,19 +20,32 @@ const Join = () => {
     const name = (form[0] as HTMLInputElement).value;
     const email = (form[1] as HTMLInputElement).value;
     const service = (form[2] as HTMLInputElement).value;
+    const Message = (form[3] as HTMLInputElement).value;
 
     console.log(name, email, service);
 
     if (name === "" || email === "" || service === "") {
-      alert("Please fill in all fields");
+      // alert("Please fill in all fields");
+      toast.warning("Please fill in all fields");
     } else {
-      await fetch("/api/email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, service }),
-      });
+      try {
+        const response = await fetch("/api/email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email, service, Message }),
+        });
+        const data = await response.json();
+        if (data.status) {
+          toast.success("Email sent successfully!");
+        } else {
+          toast.error("Error sending email. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        toast.error("Error sending email. Please try again.");
+      }
     }
   };
 

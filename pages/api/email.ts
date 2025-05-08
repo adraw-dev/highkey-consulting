@@ -9,16 +9,16 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
-    const { name, email } = req.body;
+    const { name, email, service, Message } = req.body;
     debugger;
     try {
       const { data, error } = await resend.emails.send({
         from: "jennifer <jennifer@jenniferlvelez.com>",
         // from: "jennifer@jenniferlvelez.com",
-        to: ["alejandrovelez74@gmail.com"],
-        
+        to: [email],
+
         subject: "Hello world",
-        react: EmailTemplate({ userFirstname: name }),
+        react: EmailTemplate({ userFirstname: name, service, message: Message }),
       });
 
       if (error) {

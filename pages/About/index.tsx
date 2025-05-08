@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
           alt="Jennifer Velez"
           width={265}
           height={265}
-          className="absolute top-60 md:top-80 left-[55%] md:left-[60%] opacity-50"
+          className="absolute top-60 left-[40%] md:top-80  md:left-[60%] opacity-50"
         />
         <div className="md:w-1/2 mx-auto flex flex-col items-center text-start z-20">
           <h2 className="text-5xl font-bold text-darkpurple mb-6">
@@ -100,7 +100,7 @@ const AboutPage: React.FC = () => {
           High-Key Story Showcase
         </h3>
 
-        <p className="text-center  text-lg px-[20%] mb-6">
+        <p className="text-center  text-lg px-10 md:px-[20%] mb-6">
           Experience how purpose-driven strategy, inclusive storytelling, and
           bold design converge to elevate small, women-owned brands. In this
           short reel, Jennifer L. Velez walks you through our proven framework
@@ -145,7 +145,7 @@ const AboutPage: React.FC = () => {
             className="rounded-lg mt-10 mb-4"
           />
         </div>
-        <div className="text-justify  mt-24 text-lg w-full lg:w-[50%]">
+        <div className="text-justify  mt-24 text-lg w-full md:w-[50%]">
           <p>
             Jennifer Velez is the visionary founder of a forward-thinking
             business consultancy that blends professionalism with a touch of
@@ -185,7 +185,7 @@ const AboutPage: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-around gap-44 mt-10 px-40 mb-10">
+      <div className="flex flex-col md:flex-row justify-around  gap-10 lg:gap-44 mt-10  px-10 lg:px-40 mb-10">
         <div className="w-full lg:w-[45%] h-auto  pt-10 pb-5 px-5 md:px-20 rounded-lg bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] text-white">
           <h4 className="text-2xl font-bold mb-4">Our Vision</h4>
           <p>
