@@ -132,7 +132,7 @@ const AboutPage: React.FC = () => {
         <h4 className="text-white text-4xl font-semibold">DEI</h4>
       </div>
       {/* ----------------------------------------------------------------------------------------- */}
-      <div className="px-20 mb-10 flex flex-col md:flex-row  justify-around ">
+      <div className="px-20 mb-10 flex flex-col md:flex-row justify-between gap-10 lg:justify-around ">
         <div className="flex flex-col items-center lg:items-start ml-20">
           <h3 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8D1A81] to-[#2C0728]">
             Our Founder
@@ -145,33 +145,51 @@ const AboutPage: React.FC = () => {
             className="rounded-lg mt-10 mb-4"
           />
         </div>
-        <div className="text-justify  mt-24 text-lg w-full md:w-[50%]">
-          <p>
-            Jennifer Velez is the visionary founder of a forward-thinking
-            business consultancy that blends professionalism with a touch of
-            feminine strength. With a career dedicated to empowering
-            organizations and people, Jennifer has mastered the art of balancing
-            authority with approachability, creating a space where businesses
-            feel both supported and inspired to reach new heights. With a
-            background in ethnographic research, her consultancy is built on the
-            belief that every organization has a unique story to tell, and she
-            takes a creative, authentic, and values-based approach to help bring
-            those stories to life. Though she works for a large Corporation, her
-            passion is small woman-owned businesses in the South Bay of Los
-            Angeles.
-          </p>
-          <p className="mt-4">
-            Jennifer’s expertise lies in helping businesses uncover their true
-            potential through strategic growth, innovative thinking, and
-            purpose-driven leadership. Her consultancy’s brand—reflected in its
-            logo, which evokes freedom, individuality, and boundless
-            potential—mirrors her commitment to helping clients break free from
-            limitations and embrace their unique identity. Whether guiding
-            startups, non-profits or established enterprises, Jennifer’s
-            tailored strategies are designed to foster resilience, authenticity,
-            and sustainable success.
-          </p>
+        <div className="text-justify mt-24 text-lg w-full md:w-[50%]">
+          <div className="relative">
+            <p className="relative before:content-[''] before:absolute before:top-[-2rem] before:right-[-50px] before:w-[40px] before:h-[40px] before:bg-[url('/images/aboutus/two-squares.svg')] before:bg-contain before:bg-no-repeat ">
+              Jennifer Velez is the visionary founder of a forward-thinking
+              business consultancy that blends professionalism with a touch of
+              feminine strength. With a career dedicated to empowering
+              organizations and people, Jennifer has mastered the art of
+              balancing authority with approachability, creating a space where
+              businesses feel both supported and inspired to reach new heights.
+              With a background in ethnographic research, her consultancy is
+              built on the belief that every organization has a unique story to
+              tell, and she takes a creative, authentic, and values-based
+              approach to help bring those stories to life. Though she works for
+              a large Corporation, her passion is small woman-owned businesses
+              in the South Bay of Los Angeles.
+            </p>
+            <Image
+              src="/images/aboutus/squares-purple.svg"
+              alt="Quote"
+              width={200}
+              height={200}
+              className="absolute md:hidden top-1/2 left-1/2 rotate-180 transform translate-x-[0%] opacity-5 translate-y-1/3 "
+            />
+          </div>
 
+          <div className="relative">
+            <p className="mt-4 relative z-10">
+              Jennifer’s expertise lies in helping businesses uncover their true
+              potential through strategic growth, innovative thinking, and
+              purpose-driven leadership. Her consultancy’s brand—reflected in
+              its logo, which evokes freedom, individuality, and boundless
+              potential—mirrors her commitment to helping clients break free
+              from limitations and embrace their unique identity. Whether
+              guiding startups, non-profits or established enterprises,
+              Jennifer’s tailored strategies are designed to foster resilience,
+              authenticity, and sustainable success.
+            </p>
+            <Image
+              src="/images/navbar/group.svg"
+              alt="Quote"
+              width={200}
+              height={200}
+              className="absolute md:hidden top-1/2 left-1/2 transform -translate-x-[90%] translate-y-[90%] opacity-10"
+            />
+          </div>
           <p className="mt-4">
             A passionate advocate for empowerment, Jennifer is also a
             sought-after speaker and mentor, known for her ability to inspire
@@ -186,7 +204,7 @@ const AboutPage: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-around  gap-10 lg:gap-44 mt-10  px-10 lg:px-40 mb-10">
-        <div className="w-full lg:w-[45%] h-auto  pt-10 pb-5 px-5 md:px-20 rounded-lg bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] text-white">
+        <div className="w-full lg:w-[45%] h-auto pt-10 pb-20 md:pb-5 px-5 md:px-10 rounded-lg bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] text-white relative before:content-[''] before:absolute before:bottom-[-0rem] before:right-[-0rem] before:w-[60px] before:h-[60px] before:bg-[url('/images/aboutus/two-squares.svg')] before:bg-contain before:bg-no-repeat">
           <h4 className="text-2xl font-bold mb-4">Our Vision</h4>
           <p>
             To amplify unheard voices and spark sustainable growth by weaving
@@ -194,7 +212,7 @@ const AboutPage: React.FC = () => {
             touch.
           </p>
         </div>
-        <div className="w-full lg:w-[60%]  h-auto  pt-10 pb-5 px-5  rounded-lg bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] text-white">
+        <div className="w-full lg:w-[60%]  h-auto   pt-10 pb-20 md:pb-5 px-10  rounded-lg bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] text-white relative before:content-[''] before:absolute before:bottom-[-0rem] before:right-[-0rem] before:w-[60px] before:h-[60px] before:bg-[url('/images/navbar/group.svg')] before:bg-contain before:bg-no-repeat">
           <h4 className="text-2xl font-bold mb-4">Our Mission </h4>
           <div className="mb-5">
             <h5 className="text-lg font-semibold">

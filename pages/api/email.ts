@@ -18,15 +18,17 @@ export default async function handler(
         to: [email],
 
         subject: "Hello name from High Key Consulting",
-        react: EmailTemplate({ userFirstname: name, service, message: Message }),
+        react: EmailTemplate({
+          userFirstname: name,
+          service,
+          message: Message,
+        }),
       });
 
       if (error) {
         return res.status(500).json({ status: 500, error: error });
-        // return Response.json({ error }, { status: 500 });
       }
 
-      // return Response.json(data);
       res
         .status(200)
         .json({ status: true, message: `Email sent to ${email}, ${data}` });
