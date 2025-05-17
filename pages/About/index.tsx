@@ -25,10 +25,12 @@ const AboutPage: React.FC = () => {
           className="absolute top-60 left-[40%] md:top-80  md:left-[60%] opacity-50"
         />
         <div className="md:w-1/2 mx-auto flex flex-col items-center text-start z-20">
-          <h2 className="text-5xl font-bold text-darkpurple mb-6">
+          <h2 className="text-5xl font-bold text-center text-darkpurple mb-6">
             Authentic, values-first
-            <br /> storytelling that turns
-            <br /> purpose into profit
+            <br />
+            storytelling that turns
+            <br />
+            purpose into profit.
           </h2>
           {/* -------------------------------------------------------------------------------------------------- */}
           <div className="flex  justify-center gap-4 mt-10 mb-6">
@@ -63,7 +65,7 @@ const AboutPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2">
               <h4 className="text-lg font-bold">
-                Values-Led Communication Strategy
+                DEI-Powered Brand Experiences
               </h4>
               <p className="text-justify">
                 In the U.S., 81 % of consumers refuse to buy from brands they

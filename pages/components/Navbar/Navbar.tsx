@@ -17,12 +17,12 @@ interface NavigationItem {
 
 export const navigation: NavigationItem[] = [
   { name: "Home", href: "/", current: false },
-  { name: "About Jennifer", href: "/About", current: false },
+  { name: "About", href: "/About", current: false },
   { name: "Consulting", href: "/Consulting", current: false },
   { name: "Packages", href: "/Packages", current: false },
+  { name: "Media", href: "/Media", current: false },
   // { name: "Testimonial ", href: "/Testimonial", current: false },
   // { name: "Blog ", href: "/Blog", current: false },
-  // { name: "Media Opportunities", href: "/Media", current: false },
   // { name: "Contact Us", href: "/Contact", current: false },
 ];
 
