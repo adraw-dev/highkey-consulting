@@ -101,7 +101,11 @@ const ServicePage = (props: ServicePageProps) => {
                   width={200}
                   height={100}
                   className="rounded-lg object-cover mr-4"
-                  style={{ width: 200, height: 100 }}
+                  style={{
+                    width: 200,
+                    height: 100,
+                    backgroundPosition: service.positionImage,
+                  }}
                 />
                 <span className="font-semibold text-gray-800">
                   {service.title}
