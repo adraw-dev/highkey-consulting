@@ -1,14 +1,26 @@
-import React from 'react';
+import Head from "next/head";
+import React from "react";
+import Header from "../components/Header";
+import FeaturedOpportunities from "./featured-opportunities";
+import JenniferInActionSection from "./JenniferInActionSection";
+import Experiences from "./Experiences";
 
 const MediaPage: React.FC = () => {
-    return (
-        <div className="flex justify-center items-center h-screen bg-gray-100 mb-[10%]">
-            <div className="mx-auto max-w-7xl px-4 py-24  bg-lightgrey rounded-3xl ">
-            <h1 className="text-2xl font-bold mb-4">MEDIA</h1>
-          
-            </div>
-        </div>
-    );
+  return (
+    <>
+      <Head>
+        <title>highkey consulting</title>
+        <link rel="icon" href="/ico-feather.ico" sizes="48x48" />
+      </Head>
+      <Header title="Media Opportunities With Jennifer Velez" />
+
+      <FeaturedOpportunities />
+
+      <JenniferInActionSection />
+
+      <Experiences />
+    </>
+  );
 };
 
 export default MediaPage;

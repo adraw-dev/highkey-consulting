@@ -54,11 +54,12 @@ const PackagePage: React.FC = () => {
             />
           </div>
           <p className="text-2xl mt-12 mb-8 text-center font-medium">
-            No project is too big or too small. We offer a variety of a la carte
-            services, as well as individual consulting sessions on very specific
-            issues. <br />
+            No project is too big or too small.
+            <br /> We offer a variety of a la carte services, as well as
+            individual consulting sessions on very specific issues. <br />
             Please reach out to us with your inquiry, and we can put together a
-            plan to suit your needs. We love an individualized approach.
+            plan to suit your needs.
+            <br /> We love an individualized approach.
           </p>
           {/* add a image with the title to pick my brain */}
         </div>

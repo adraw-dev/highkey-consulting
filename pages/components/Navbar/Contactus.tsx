@@ -17,9 +17,7 @@ const Contactusform = () => {
     setInputValues((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const handleClick = () => {
-    alert(`Name: ${inputValues.input1}, Email-address: ${inputValues.input2}`);
-  };
+
 
   // FORM SUBMIT
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -33,7 +31,6 @@ const Contactusform = () => {
     console.log(name, email, service);
 
     if (name === "" || email === "" || service === "") {
-      // alert("Please fill in all fields");
       toast.warning("Please fill in all fields");
     } else {
       try {
@@ -74,7 +71,7 @@ const Contactusform = () => {
         <div className="hidden lg:block">
           <button
             type="button"
-            className="justify-end text-xl font-semibold text-white bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-darkpurple hover:text-white"
+            className="justify-end text-xl font-semibold text-white bg-aqua py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-darkpurple hover:text-white"
             onClick={openModal}
           >
             Contact Us
@@ -212,7 +209,6 @@ const Contactusform = () => {
 
                       <button
                         type="submit"
-                        onClick={handleClick}
                         disabled={isDisabled}
                         className="py-3 px-5 text-sm disabled:opacity-50 font-medium w-full text-center text-white rounded-lg bg-darkpurple hover:bg-hopurple focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                       >

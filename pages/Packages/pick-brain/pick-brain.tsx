@@ -15,7 +15,7 @@ const PickBrain: React.FC = () => {
             className="opacity-40"
           />
           <h2 className="gradient-text text-65xl font-bold  text-center z-10">
-            Pick Brain
+            Pick my Brain
           </h2>
         </div>
         <div>
@@ -29,7 +29,7 @@ const PickBrain: React.FC = () => {
                 style={{
                   maskImage: "linear-gradient(black 90%, transparent)",
                 }}
-                className="absolute  hidden md:block md:w-[350px] md:top-40  md:-left-4 lg:w-[400px] lg:top-28 lg:left-30 xl:w-[500px] xl:top-10 xl:left-30  2xl:top-10 2xl:left-40"
+                className="absolute  hidden md:block md:w-[450px] md:top-40  md:-left-4 lg:w-[500px] lg:top-28 lg:left-30 xl:w-[600px] xl:top-10 xl:left-30  2xl:top-10 2xl:left-40"
               />
             </div>
             <h4 className=" w-full md:w-[60%] lg:w-[57%] xl:w-[58%] 2xl:w-[53%] text-2xl text-white font-bold mb-8 ml  z-10">
@@ -55,7 +55,7 @@ const PickBrain: React.FC = () => {
           </p>
 
           <Link href={"#joinus-section"}>
-            <button className="text-sm md:text-xl font-semibold hover:shadow-xl mb-8 bg-darkpurple text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hopurple">
+            <button className="text-sm md:text-xl font-semibold hover:shadow-xl mb-8 bg-darkpurple w-5/6 text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hopurple">
               Let’s connect!
             </button>
           </Link>
@@ -71,32 +71,33 @@ const PickBrain: React.FC = () => {
           talk about their own specific needs with another human that “gets it”.
           <br />
           <br />
-          If you’re facing a challenge and need support, Pick My Brain can mean
-          anything. Maybe it’s a conversation about brand activations, creating
-          leads, creative ideas to grow your business, content marketing,
-          navigating social media or graphic design. Maybe you need support
-          identifying your target market.
+          If you’re facing a challenge and need support, “PICK MY BRAIN” can
+          mean anything. Maybe it’s a conversation about brand activations,
+          creating leads, creative ideas to grow your business, content
+          marketing, navigating social media or graphic design. Maybe you need
+          support identifying your target market.
           <br />
           <br />
           If you’re interested, please send an email request to
           inquiry@JenniferLVelez.com with “Pick Your Brain” as the subject.
           Someone from our team will reach out to you to schedule our one-on-one
           chat which can take place via phone or video conferencing. Before our
-          scheduled call, you will receive an invoice for payment. 
+          scheduled call, you will receive an invoice for payment.
           <br />
           <br />
           Our time is limited, so we will follow an agenda to make sure we have
           time to address your areas of need. A 50 minute session starts at $150
           and scales based on the size of your company and revenue.
           <br />
+          
         </p>
-        <Image
+        {/* <Image
           src="/images/aboutus/Jennifer_about_1.jpg"
           alt="Jennifer Velez"
           width={1000}
           height={686}
           className="my-10 mx-auto rounded-3xl"
-        />
+        /> */}
       </div>
     </div>
   );
