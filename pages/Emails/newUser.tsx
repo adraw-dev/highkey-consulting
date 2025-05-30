@@ -55,7 +55,7 @@ export const adminEmail = ({
           could be a valuable opportunity to offer your guidance and expertise.
           <br />
           <br />
-          —High Key Consulting Automated System
+          —highkey consulting Automated System
         </Text>
         <Hr style={hr} />
       </Container>

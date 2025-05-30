@@ -1,17 +1,15 @@
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import Head from "next/head";
-import Header from "../components/Header";
-import CroppedImageCard from "./components/croppedImageCard";
-import { ArrowRight } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import Head from "next/head";
+import Image from "next/image";
+import React from "react";
+import Header from "../components/Header";
+import CroppedImageCard from "./components/croppedImageCard";
 
 const services: string[] = [
   "COMMUNICATIONS STRATEGY",

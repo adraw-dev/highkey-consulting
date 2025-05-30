@@ -1,5 +1,5 @@
 "use client";
-import { useOpenContext } from "@/pages/context/open.context";
+import { useOpenContext } from "@/context/open.context";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
 import { Fragment, useState, FormEvent } from "react";

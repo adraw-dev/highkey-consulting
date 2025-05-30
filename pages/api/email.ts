@@ -14,7 +14,7 @@ export default async function handler(
 
     try {
       const emailDataUser = {
-        from: "jennifer <jennifer@jenniferlvelez.com>",
+        from: "jennifer <inquiry@jenniferlvelez.com>",
         subject: `Hello ${name} from High Key Consulting`,
         react: EmailUserTemplate({
           userFirstname: name,
@@ -23,8 +23,9 @@ export default async function handler(
         }),
       };
       const emailDataMe = {
-        from: "jennifer <jennifer@jenniferlvelez.com>",
-        subject: `Hello jennifer ${name} want to connect with you `,
+        from: "jennifer <inquiry@jenniferlvelez.com>",
+        subject: `Hello jennifer, ${name} want to connect with you `,
+
         react: EmailAdminTemplate({
           userFirstname: name,
           email: email,
@@ -40,8 +41,7 @@ export default async function handler(
         }),
         resend.emails.send({
           ...emailDataMe,
-          // to: ["jennifer@jenniferlvelez.com"],
-          to: ["alejandrovelez74@gmail.com"],
+          to: ["inquiry@jenniferlvelez.com"],
         }),
       ]);
 

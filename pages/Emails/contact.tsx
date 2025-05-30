@@ -59,7 +59,7 @@ export const contactEmail = ({ userFirstname }: ContactEmailProps) => (
         <Text style={paragraph}>
           Best regards,
           <br />
-          The High Key Consulting Team
+          The highkey consulting Team
         </Text>
         <Hr style={hr} />
     

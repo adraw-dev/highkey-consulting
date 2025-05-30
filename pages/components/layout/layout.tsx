@@ -1,4 +1,4 @@
-import { OpenProvider } from "@/pages/context/open.context";
+import { OpenProvider } from "@/context/open.context";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Toaster } from "sonner";

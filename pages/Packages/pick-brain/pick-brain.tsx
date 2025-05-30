@@ -1,4 +1,4 @@
-import { useOpenContext } from "@/pages/context/open.context";
+import { useOpenContext } from "@/context/open.context";
 import Image from "next/image";
 import React from "react";
 
