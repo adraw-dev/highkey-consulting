@@ -1,5 +1,13 @@
+"use client";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
 
 const InstaLink = ({ href, imageUrl }: { href: string; imageUrl: string }) => {
   return (
@@ -31,6 +39,7 @@ const InstaLink = ({ href, imageUrl }: { href: string; imageUrl: string }) => {
 };
 
 const Insta = () => {
+  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
   const links = [
     {
       href: "https://www.linkedin.com/posts/jenniferleighvelez_dei-equity-inclusion-activity-7296947593081696256-1f7m/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSM8FYBcXZmiL-p3pY1E0RDf5o79pH_eAA",
@@ -51,14 +60,30 @@ const Insta = () => {
   ];
 
   return (
-    <div className="mx-auto max-w-2xl pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h2 className="text-4xl lg:text-65xl  font-semibold  md:font-bold sm:leading-tight mt-5 text-center text-white">
+    <div className="mx-auto mb-20  pb-16 md:px lg:px-32 sm:px-6 lg:mb-0  ">
+      <h2 className="text-4xl lg:text-65xl flex justify-center  font-semibold  md:font-bold sm:leading-tight mt-5 text-center text-white">
         Connect with us on LinkedIn
       </h2>
-      <div className="mt-10 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-        {links.map((link, index) => (
-          <InstaLink key={index} href={link.href} imageUrl={link.imageUrl} />
-        ))}
+      <div className="mt-10 ">
+        <Carousel plugins={[plugin.current]} className="px-2 md:px-5 w-full">
+          <CarouselContent className="">
+            {links.map((link, index) => {
+              return (
+                <CarouselItem
+                  key={index}
+                  className="  md:basis-1/2 lg:basis-1/4 2xl:basis-1/4"
+                >
+                  <InstaLink
+                    key={index}
+                    href={link.href}
+                    imageUrl={link.imageUrl}
+                  />
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+        </Carousel>
+       
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ export const contactEmail = ({ userFirstname }: ContactEmailProps) => (
       </Preview>
       <Container style={container}>
         <Img
-          src={`https://jenniferlvelez.com/images/logo.png`}
+          src={`https://jenniferlvelez.com/images/navbar/HIGHKEY-logo-green.png`}
           width="170"
           height="50"
           alt="Koala"

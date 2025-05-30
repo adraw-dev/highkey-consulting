@@ -1,11 +1,13 @@
-import Link from "next/link";
+import { useOpenContext } from "@/pages/context/open.context";
 import Image from "next/image";
 import React from "react";
 
 const PickBrain: React.FC = () => {
+  const { setIsOpen } = useOpenContext();
+
   return (
     <div>
-      <div className="bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] h-auto py-8 w-full  flex flex-col justify-center relative">
+      <div className="bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] h-auto pt-10 md:py-8 w-full  flex flex-col justify-center relative">
         <div className="flex items-center  mx-auto justify-between gap-10 ">
           <Image
             src="/images/navbar/group.svg"
@@ -19,17 +21,17 @@ const PickBrain: React.FC = () => {
           </h2>
         </div>
         <div>
-          <div className="flex justify-between mt-10 items-center">
-            <div className="w-2/6 h-4 mx-auto">
+          <div className="flex flex-col-reverse md:flex-row justify-between px-10 md:px-0 mt-10 items-center">
+            <div className=" h-auto md:w-2/6 md:h-4 mx-auto">
               <Image
                 src="/images/package/thinking.png"
                 alt="thingking"
                 width={500}
                 height={450}
                 style={{
-                  maskImage: "linear-gradient(black 90%, transparent)",
+                  maskImage: "linear-gradient(black 96%, transparent)",
                 }}
-                className="absolute  hidden md:block md:w-[450px] md:top-40  md:-left-4 lg:w-[500px] lg:top-28 lg:left-30 xl:w-[600px] xl:top-10 xl:left-30  2xl:top-10 2xl:left-40"
+                className=" md:absolute   w-[450px]  md:block md:w-[450px] md:top-40  md:-left-4 lg:w-[500px] lg:top-28 lg:left-30 xl:w-[600px] xl:top-10 xl:left-30  2xl:top-10 2xl:left-40"
               />
             </div>
             <h4 className=" w-full md:w-[60%] lg:w-[57%] xl:w-[58%] 2xl:w-[53%] text-2xl text-white font-bold mb-8 ml  z-10">
@@ -53,12 +55,14 @@ const PickBrain: React.FC = () => {
             anything from brand activations and lead generation to content
             marketing, social media, or defining your target market.
           </p>
-
-          <Link href={"#joinus-section"}>
-            <button className="text-sm md:text-xl font-semibold hover:shadow-xl mb-8 bg-darkpurple w-5/6 text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hopurple">
+          <a>
+            <button
+              onClick={() => setIsOpen(true)}
+              className="text-sm md:text-xl font-semibold hover:shadow-xl mb-8 bg-darkpurple  text-center text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hopurple"
+            >
               Let’s connect!
             </button>
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -89,7 +93,6 @@ const PickBrain: React.FC = () => {
           time to address your areas of need. A 50 minute session starts at $150
           and scales based on the size of your company and revenue.
           <br />
-          
         </p>
         {/* <Image
           src="/images/aboutus/Jennifer_about_1.jpg"

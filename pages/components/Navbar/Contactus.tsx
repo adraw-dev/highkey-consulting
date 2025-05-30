@@ -1,23 +1,25 @@
 "use client";
+import { useOpenContext } from "@/pages/context/open.context";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
 import { Fragment, useState, FormEvent } from "react";
 import { toast } from "sonner";
 
 const Contactusform = () => {
-  let [isOpen, setIsOpen] = useState(false);
+  const { isOpen, setIsOpen } = useOpenContext();
+  const [isLoading, setIsLoading] = useState(false);
 
   const [inputValues, setInputValues] = useState({
     input1: "",
     input2: "",
+    service: "COMMUNICATIONS STRATEGY",
+    message: "",
   });
 
   const handleChange = (e: { target: { name: string; value: string } }) => {
     const { name, value } = e.target;
     setInputValues((prevState) => ({ ...prevState, [name]: value }));
   };
-
-
 
   // FORM SUBMIT
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -34,6 +36,7 @@ const Contactusform = () => {
       toast.warning("Please fill in all fields");
     } else {
       try {
+        setIsLoading(true);
         const response = await fetch("/api/email", {
           method: "POST",
           headers: {
@@ -50,9 +53,11 @@ const Contactusform = () => {
       } catch (error) {
         console.error("Error:", error);
         toast.error("Error sending email. Please try again.");
+      } finally {
+        setIsLoading(false);
+        setIsOpen(false);
       }
     }
-    // setIsOpen(false);
   };
 
   const isDisabled = Object.values(inputValues).some((value) => value === "");
@@ -72,7 +77,7 @@ const Contactusform = () => {
           <button
             type="button"
             className="justify-end text-xl font-semibold text-white bg-aqua py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-darkpurple hover:text-white"
-            onClick={openModal}
+            onClick={() => openModal()}
           >
             Contact Us
           </button>
@@ -175,6 +180,9 @@ const Contactusform = () => {
                         </label>
                         <select
                           id="service"
+                          name="service"
+                          value={inputValues.service}
+                          onChange={handleChange}
                           className="relative block w-full appearance-none  rounded-md border border-gray px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                         >
                           <option value="COMMUNICATIONS STRATEGY">
@@ -204,12 +212,15 @@ const Contactusform = () => {
                           className="my-4 py-4 sm:pl-6 w-full lg:text-xl text-black sm:rounded-2xl bg-[#fdfdfd] border pl-1 focus:outline-none bg-emailbg focus:text-black"
                           placeholder="Your message"
                           rows={4}
+                          name="message"
+                          value={inputValues.message}
+                          onChange={handleChange}
                         ></textarea>
                       </div>
 
                       <button
                         type="submit"
-                        disabled={isDisabled}
+                        disabled={isDisabled || isLoading}
                         className="py-3 px-5 text-sm disabled:opacity-50 font-medium w-full text-center text-white rounded-lg bg-darkpurple hover:bg-hopurple focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                       >
                         Let&apos;s Connect!

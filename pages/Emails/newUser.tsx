@@ -12,67 +12,66 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-interface ContactEmailProps {
+interface adminEmailProps {
   userFirstname: string;
   service: string;
   message: string;
   email?: string;
 }
 
-
-
-export const contactEmail = ({ userFirstname }: ContactEmailProps) => (
+export const adminEmail = ({
+  userFirstname,
+  service,
+  message,
+  email,
+}: adminEmailProps) => (
   <Html>
     <Head />
     <Body style={main}>
       <Preview>
-      Hello {userFirstname},
-      Thank you for scheduling a 30‑minute consultation with High Key Consulting. We appreciate your interest...
+        Hello {userFirstname}, Thank you for scheduling a 30‑minute consultation
+        with High Key Consulting. We appreciate your interest...
       </Preview>
       <Container style={container}>
         <Img
-          src={`https://jenniferlvelez.com/images/logo.png`}
+          src={`https://jenniferlvelez.com/images/navbar/HIGHKEY-logo-green.png`}
           width="170"
           height="50"
           alt="Koala"
           style={logo}
         />
+        <Text style={paragraph}>Hi Jennifer,</Text>
+        <Text style={paragraph}>
+          You’ve just received a new contact form submission from the highkey
+          consulting website. Here are the details:
+        </Text>
+        <Text style={paragraph}><>👤 <b>Name:</b> {userFirstname}</></Text>
+        <Text style={paragraph}><>📧 <b>Email:</b> {email}</>  </Text>
 
-        <Text style={paragraph}>Hello <b>{userFirstname}</b>,</Text>
+        <Text style={paragraph}><>📂 <b>Service of Interest:</b></> {service}</Text>
+        <Text style={paragraph}><>📝 <b>Message:</b></> {message}</Text>
         <Text style={paragraph}>
-          Thank you for scheduling a 30‑minute consultation with High Key
-          Consulting. We appreciate your interest in exploring how our expertise
-          can help drive your business forward.
-        </Text>
-        <Text style={paragraph}>
-          One of our senior consultants will review the details you provided and
-          reach out shortly to confirm your appointment and ensure we’re fully
-          prepared to address your objectives. In the meantime, feel free to
-          reply to this email if there’s any specific topic or question you’d
-          like us to cover during our call.
-        </Text>
-        <Text style={paragraph}>
-          We look forward to connecting with you and delivering actionable
-          insights tailored to your needs.
-        </Text>
-  
-        <Text style={paragraph}>
-          Best regards,
+          Please follow up as soon as possible to ensure a timely response. This
+          could be a valuable opportunity to offer your guidance and expertise.
           <br />
-          The High Key Consulting Team
+          <br />
+          —High Key Consulting Automated System
         </Text>
         <Hr style={hr} />
-    
       </Container>
     </Body>
   </Html>
 );
 
-contactEmail.PreviewProps = {
+adminEmail.PreviewProps = {
   userFirstname: "Alan",
-} as ContactEmailProps;
+  service: "Communicate",
+  message:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Proin ac neque nec sapien cursus dictum. Mauris euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, vitae euismod nisl nunc euismod nunc. Sed vitae sapien euismod, cursus sapien nec, dictum sapien. Etiam euismod, nisi eu cursus cursus, nisl nisi cursus nisi, euismod euismod nisi nisi euismod.",
+  email: "alan@example.com",
+} as adminEmailProps;
 
-export default contactEmail;
+export default adminEmail;
 
 const main = {
   backgroundColor: "#ffffff",

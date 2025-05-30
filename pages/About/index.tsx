@@ -5,8 +5,29 @@ import Head from "next/head";
 import Header from "../components/Header";
 import CroppedImageCard from "./components/croppedImageCard";
 import { ArrowRight } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import Link from "next/link";
+
+const services: string[] = [
+  "COMMUNICATIONS STRATEGY",
+  "MARKETING ",
+  "GRAPHIC DESIGN ",
+  "BRAND ACTIVATIONS ",
+  "BRAND STRATEGY ",
+  "PERSONAL BRANDING ",
+  "DEI",
+  "GEN Z",
+];
 
 const AboutPage: React.FC = () => {
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
   return (
     <>
       <Head>
@@ -122,7 +143,27 @@ const AboutPage: React.FC = () => {
       </div>
 
       {/* ------------------------------------------------------------------------------ */}
-      <div className="flex h-auto py-10 w-full flex-wrap justify-center bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] items-center mb-10">
+      <div className="flex h-auto py-10 px-10 w-full flex-wrap justify-center bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] items-center mb-10">
+        <Carousel plugins={[plugin.current]} className="px-2 md:px-5 w-full">
+          <CarouselContent>
+            {services.map((service, index) => {
+              return (
+                <CarouselItem key={index} className="break-keep md:basis-1/2 lg:basis-1/2 2xl:basis-1/3">
+                  <div className="flex justify-center gap-6 items-center">
+                    
+                    <h4 className="text-white text-3xl font-semibold">
+                      {service}
+                    </h4>
+                    <ArrowRight size={48} color="#8D1A81" />
+                  </div>
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+        </Carousel>
+      </div>
+
+      {/*
         <h4 className="text-white text-4xl font-semibold">Marketing</h4>
         <ArrowRight size={48} color="#8D1A81" />
         <h4 className="text-white text-4xl font-semibold">
@@ -132,7 +173,7 @@ const AboutPage: React.FC = () => {
         <h4 className="text-white text-4xl font-semibold">Graphic Design</h4>
         <ArrowRight size={48} color="#8D1A81" />
         <h4 className="text-white text-4xl font-semibold">DEI</h4>
-      </div>
+      </div> */}
       {/* ----------------------------------------------------------------------------------------- */}
       <div className="px-20 mb-10 flex flex-col md:flex-row justify-between gap-10 lg:justify-around ">
         <div className="flex flex-col items-center lg:items-start ml-20">

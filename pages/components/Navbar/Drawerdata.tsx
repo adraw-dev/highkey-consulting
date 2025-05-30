@@ -1,15 +1,30 @@
-import React from "react";
+"use client"
 import Link from "next/link";
 import Contactusform from "./Contactus";
 import { navigation } from "./Navbar";
-
-
+import { useEffect, useState } from "react";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Data = () => {
+  const [showContact, setShowContact] = useState(false);
+
+  useEffect(() => {
+    // Función para actualizar el estado según el ancho de la ventana
+    const handleResize = () => {
+      setShowContact(window.innerWidth <= 1150);
+    };
+
+    // Ejecutar al montar
+    handleResize();
+
+    // Escuchar cambios de tamaño
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="rounded-md max-w-sm w-full mx-auto">
       <div className="flex-1 space-y-4 py-1">
@@ -31,10 +46,7 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-4"></div>
-            <button className="bg-darkpurple hover:bg-hopurple w-full  hover:text-white text-white rounded-md border  border-white font-medium py-2 px-4 rounded">
-              Contact Us
-            </button>
-            <Contactusform />
+            {showContact ? <Contactusform /> : null}
           </div>
         </div>
       </div>
