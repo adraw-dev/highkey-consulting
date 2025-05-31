@@ -37,7 +37,7 @@ const Contactusform = () => {
     } else {
       try {
         setIsLoading(true);
-        const response = await fetch("/api/email", {
+        const response = await fetch("https://highkey-api.vercel.app/api/send-email", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
