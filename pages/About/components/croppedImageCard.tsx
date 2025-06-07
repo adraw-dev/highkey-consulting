@@ -30,7 +30,7 @@ export default function CroppedImageCard() {
         <div
           className="w-full h-[400px] overflow-hidden bg-gray-200 relative z-0"
           style={{
-            clipPath: "polygon(79% 0, 100% 29%, 100% 100%, 0 100%, 0 0);",
+            clipPath: "polygon(79% 0, 100% 29%, 100% 100%, 0 100%, 0 0)",
           }}
         >
           <Image
