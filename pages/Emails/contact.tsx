@@ -27,7 +27,7 @@ export const contactEmail = ({ userFirstname }: ContactEmailProps) => (
     <Body style={main}>
       <Preview>
       Hello {userFirstname},
-      Thank you for scheduling a 30‑minute consultation with High Key Consulting. We appreciate your interest...
+      Thank you for scheduling a 30‑minute consultation with HighKey Consulting. We appreciate your interest...
       </Preview>
       <Container style={container}>
         <Img
@@ -40,7 +40,7 @@ export const contactEmail = ({ userFirstname }: ContactEmailProps) => (
 
         <Text style={paragraph}>Hello <b>{userFirstname}</b>,</Text>
         <Text style={paragraph}>
-          Thank you for scheduling a 30‑minute consultation with High Key
+          Thank you for scheduling a 30‑minute consultation with HighKey
           Consulting. We appreciate your interest in exploring how our expertise
           can help drive your business forward.
         </Text>

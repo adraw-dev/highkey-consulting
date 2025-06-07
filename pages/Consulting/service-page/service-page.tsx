@@ -82,7 +82,7 @@ const ServicePage = (props: ServicePageProps) => {
           <p className="text-gray-700">{props.approach}</p>
         </div>
       </div>
-      <div className="hidden md:block w-1/3">
+      <div className="hidden md:block w-1/5">
         <h3 className="text-2xl text-darkpurple font-bold mb-2">
           Other Services
         </h3>
@@ -107,7 +107,7 @@ const ServicePage = (props: ServicePageProps) => {
                     backgroundPosition: service.positionImage,
                   }}
                 />
-                <span className="font-semibold text-gray-800">
+                <span className="font-semibold text-left text-gray-800 text-wrap">
                   {service.title}
                 </span>
               </div>

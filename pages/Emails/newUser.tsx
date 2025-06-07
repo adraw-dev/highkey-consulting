@@ -30,7 +30,7 @@ export const adminEmail = ({
     <Body style={main}>
       <Preview>
         Hello {userFirstname}, Thank you for scheduling a 30‑minute consultation
-        with High Key Consulting. We appreciate your interest...
+        with HighKey Consulting. We appreciate your interest...
       </Preview>
       <Container style={container}>
         <Img

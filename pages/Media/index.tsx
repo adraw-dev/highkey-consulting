@@ -10,9 +10,9 @@ const MediaPage: React.FC = () => {
     <>
       <Head>
         <title>highkey consulting</title>
-        <link rel="icon" href="/ico-feather.ico" sizes="48x48" />
+        <link rel="icon" href="/hk.png" sizes="48x48" />
       </Head>
-      <Header title="Media Opportunities With Jennifer Velez" />
+      <Header title="Media Opportunities With Jennifer" />
 
       <FeaturedOpportunities />
 

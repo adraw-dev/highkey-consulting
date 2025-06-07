@@ -26,23 +26,23 @@ export default function FeaturedOpportunities() {
         <div className="w-full flex flex-col lg:flex-row items-start justify-end md:justify-center gap-10">
           <div className="w-full">
             <Image
-              src="/images/media/Jennifer-walk.png" // Replace with your own image path
+              src="/images/media/Jennifer-walk-2.png" // Replace with your own image path
               alt="Jennifer"
-              width={400}
-              height={200}
-              className="hidden md:block absolute -ml-10 md:-ml-32 lg:-ml-32"
+              width={500}
+              height={300}
+              className="hidden md:block absolute -ml-40 md:-ml-48 lg:-ml-48 xl:-ml-56"
             />
             <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
               FEATURED OPPORTUNITIES
             </h2>
-            <div className="h-20   flex items-center justify-center bg-[linear-gradient(134.66deg,_#2C0728_6.35%,_#8D1A81_95.93%)] text-white pl-6 md:pl-14 pr-6 py-3  rounded-full text-sm md:text-base w-full">
+            <div className="h-20   flex items-center justify-center bg-[linear-gradient(134.66deg,_#2C0728_6.35%,_#8D1A81_95.93%)] text-white pl-6 md:pl-24 lg:pl-14 pr-6 py-3  rounded-full text-sm md:text-base w-full">
               <p className="">
                 From keynote stages to runway lights, Jennifer brings voice,
                 presence, and perspective.
               </p>
             </div>
 
-            <div className="w-full mt-10 ml-0 sm:ml-8 flex flex-col items-center gap-8 lg:ml-40 lg:w-2/3">
+            <div className="w-full mt-10 ml-0 sm:pl-8 flex flex-col items-center gap-8 lg:ml-40 lg:w-2/3">
               <div className="">
                 <IconComponent
                   icon="icono_microfono.svg"

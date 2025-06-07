@@ -25,7 +25,7 @@ const JenniferInActionSection = () => (
         </h2>
       </div>
       <p className="mt-5 text-2xl text-center font-bold text-white">
-        Jennifer Velez is a thought leader, creative, and connector.
+        Jennifer is a thought leader, creative, and connector.
       </p>
     </div>
     <Image

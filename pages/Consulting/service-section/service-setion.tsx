@@ -57,7 +57,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
         )}
         <Link href={`/${url}`}>
           <button className="mx-auto text-sm md:text-xl font-semibold hover:shadow-xl bg-darkpurple text-white  px-6 py-3  rounded-full hover:bg-hopurple">
-            Lean more
+            Learn more
           </button>
         </Link>
       </div>

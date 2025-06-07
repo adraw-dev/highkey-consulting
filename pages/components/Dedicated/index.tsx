@@ -51,7 +51,7 @@ const Dedicated = () => {
               </p>
               <p className="text-2xl font-medium md:font-semibold mt-12 lg:ml-32 preline text-center lg:text-start">
                 {" "}
-                Jennifer Velez, CEO of HighKey Consulting
+                Jennifer, CEO of HighKey Consulting
               </p>
             </div>
           </motion.div>

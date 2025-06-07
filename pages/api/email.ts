@@ -15,7 +15,7 @@ export default async function handler(
     try {
       const emailDataUser = {
         from: "jennifer <inquiry@jenniferlvelez.com>",
-        subject: `Hello ${name} from High Key Consulting`,
+        subject: `Hello ${name} from HighKey Consulting`,
         react: EmailUserTemplate({
           userFirstname: name,
           service,

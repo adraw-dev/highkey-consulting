@@ -45,15 +45,15 @@ const PickBrain: React.FC = () => {
       <div className="flex justify-between items-center bg-gray-100">
         <div className="w-2/6 h-4 hidden md:block"></div>
         <div className="w-full md:w-[60%] lg:w-[63%] xl:w-[63%] 2xl:w-[70%] flex flex-col items-center justify-center">
-          <p className=" text-xl mt-12 mb-8 text-justify font-medium px-4 lg:px-[5rem] 2xl:px-[17rem]">
+          <p className=" text-xl mt-12 mb-8 text-justify font-medium px-8 lg:px-[5rem] 2xl:px-[17rem]">
             Sometimes you don’t need a full consulting package—just 50 minutes
             of focused conversation with an experienced strategist.
             <br />
             <br />
-            Pick My Brain sessions let you tap directly into Jennifer L. Velez’s
-            expertise to troubleshoot, ideate, and clarify next steps on
-            anything from brand activations and lead generation to content
-            marketing, social media, or defining your target market.
+            Pick My Brain sessions let you tap directly into Jennifer expertise
+            to troubleshoot, ideate, and clarify next steps on anything from
+            brand activations and lead generation to content marketing, social
+            media, or defining your target market.
           </p>
           <a>
             <button
@@ -66,7 +66,7 @@ const PickBrain: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-7 px-4 lg:px-[5rem] 2xl:px-[17rem]">
+      <div className="flex flex-col gap-7 px-8  lg:px-[10rem] 2xl:px-[17rem]">
         <h3 className="text-[#1A3B3B] text-4xl font-bold">How does it work?</h3>
         <p className="text-xl  text-justify font-medium ">
           One of my greatest joys is connecting with others! Founders are
@@ -94,13 +94,16 @@ const PickBrain: React.FC = () => {
           and scales based on the size of your company and revenue.
           <br />
         </p>
-        {/* <Image
-          src="/images/aboutus/Jennifer_about_1.jpg"
-          alt="Jennifer Velez"
-          width={1000}
-          height={686}
-          className="my-10 mx-auto rounded-3xl"
-        /> */}
+        <div className="mt-10 rounded-xl">
+          <video
+            src="/images/media/el pavo ese.mp4"
+            className="w-full h-[400px] rounded-lg"
+            width="100%"
+            height="100%"
+            autoPlay
+            loop
+          />
+        </div>
       </div>
     </div>
   );

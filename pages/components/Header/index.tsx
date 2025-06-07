@@ -7,7 +7,7 @@ interface HeaderProps {
 }
 const Header = ({ title }: HeaderProps) => {
   return (
-    <div className="bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] h-52 w-full pt-20 flex justify-center  relative">
+    <div className="bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] h-auto md:h-52 w-full pt-20 flex justify-center  relative">
       <Image
         src="/images/navbar/squares.svg"
         alt="hero-image"

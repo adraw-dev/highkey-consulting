@@ -6,7 +6,7 @@ const TestimonialPage: React.FC = () => {
     <>
       <Head>
         <title>highkey consulting</title>
-        <link rel="icon" href="/ico-feather.ico" sizes="48x48" />
+        <link rel="icon" href="/hk.png" sizes="48x48" />
       </Head>
 
       <div className="flex justify-center items-center h-screen bg-gray-100 mb-[10%]">

@@ -68,7 +68,7 @@ const AboutMe = () => {
                 <p className="text-justify mt-[10%] text-lg  md:font-bold">
                   At highkey consulting, we’re more than a consultancy -
                   we&apos;re dedicated partners in success. Led by visionary
-                  founder, Jennifer Velez (she/her), we blend inclusive
+                  founder, Jennifer (she/her), we blend inclusive
                   leadership with ethnographic insights and market research to
                   craft strategies that unlock full potential.
                   <br />
@@ -103,7 +103,7 @@ const AboutMe = () => {
               >
                 <Image
                   src="/images/aboutus/Jennifer_aboutUS.jpg"
-                  alt="Jennifer Velez"
+                  alt="Jennifer"
                   width={516}
                   height={730}
                   className="mx-auto md:mx-0 h-auto  md:mt-[10%] lg:mt-[10%] rounded-xl shadow-xl"
