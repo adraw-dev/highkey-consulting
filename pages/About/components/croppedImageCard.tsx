@@ -42,7 +42,7 @@ export default function CroppedImageCard() {
         </div>
 
         {/* Tarjeta fuera del contenedor de la imagen */}
-        <div className=" absolute  bottom-[-16px] -left-20 md:bottom-[-86px] md:left-0 lg:bottom-[-86px] lg:-left-28 z-10 bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] text-start text-white px-4 pt-3 pb-7 w-44 rounded-md shadow-lg text-sm font-sans">
+        <div className=" absolute  bottom-[-16px] -left-20 md:bottom-[-86px] md:left-0 lg:bottom-[-86px] lg:-left-10 z-10 bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] text-start text-white px-4 pt-3 pb-7 w-44 rounded-md shadow-lg text-sm font-sans">
           <div className="flex items-center font-bold text-lg">
             33%
             <span className="bg-darkpurple text-white text-center h-5 w-5 pb-6  rounded-full text-base ml-5">

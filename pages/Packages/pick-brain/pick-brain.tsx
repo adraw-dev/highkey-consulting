@@ -102,6 +102,8 @@ const PickBrain: React.FC = () => {
             height="100%"
             autoPlay
             loop
+            muted
+            playsInline
           />
         </div>
       </div>

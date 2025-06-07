@@ -21,9 +21,6 @@ export const navigation: NavigationItem[] = [
   { name: "Consulting", href: "/Consulting", current: false },
   { name: "Packages", href: "/Packages", current: false },
   { name: "Media", href: "/Media", current: false },
-  // { name: "Testimonial ", href: "/Testimonial", current: false },
-  // { name: "Blog ", href: "/Blog", current: false },
-  // { name: "Contact Us", href: "/Contact", current: false },
 ];
 
 function classNames(...classes: string[]) {

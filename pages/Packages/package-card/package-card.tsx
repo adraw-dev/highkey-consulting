@@ -20,6 +20,7 @@ const PackageCard: React.FC<PackageCardProps> = ({
       <div className="w-full px-4  transition-transform duration-300 ease-in-out hover:scale-105">
         <div
           className={`relative z-10 mb-10  overflow-hidden rounded-[10px] border-2 border-stroke ${top ? "bg-[#1A3B3B] text-white" : "bg-white text-black"} px-8 py-10 shadow-pricing dark:border-dark-3  shadow-2xl sm:p-12 lg:px-8 lg:py-10 xl:p-[2rem]`}
+          
         >
           <h2 className="mb-5 text-[42px] font-black text-dark  text-center dark:text-white">
             {title}

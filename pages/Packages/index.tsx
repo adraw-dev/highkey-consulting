@@ -17,7 +17,7 @@ const PackagePage: React.FC = () => {
       <div className="flex justify-center items-center  bg-gray-100 ">
         <div className="mx-auto  px-6 lg:px-[5rem] 2xl:px-[17rem] pt-20  ">
           <h3 className="text-4xl mb-12 text-center font-bold text-darkpurple ">
-            Highkey Consulting has crafted the below service packages <br />
+            highkey Consulting has crafted the below service packages <br />
             to meet the needs of all different types of businesses.
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -18,12 +18,12 @@ const products: ProductType[] = [
   {
     id: 1,
     section: "",
-    link: ["Home", "About"],
+    link: ["Home", "About", "Consulting"],
   },
   {
     id: 2,
     section: "     ",
-    link: ["Consulting", "Packages"],
+    link: ["Packages", "Media"],
   },
   // {
   //   id: 2,
@@ -69,6 +69,7 @@ const footer = () => {
                   height={50}
                 />
               </div>
+
               <div className="flex ml-10 gap-4">
                 <div className="footer-icons">
                   <Link
@@ -83,6 +84,7 @@ const footer = () => {
                     />
                   </Link>
                 </div>
+
                 <div className="footer-icons">
                   <Link
                     href="https://www.instagram.com/pbandjleighthyme/"
@@ -110,7 +112,7 @@ const footer = () => {
                   {product.link.map((link: string, index: number) => (
                     <li key={index} className="mb-5 ">
                       <Link
-                        href="/"
+                        href={`/${link}`}
                         className="text-white text-lg font-normal mb-6  "
                       >
                         {link}
@@ -130,23 +132,18 @@ const footer = () => {
             <div className="mt-4 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 xl:gap-x-8">
               <div>
                 <h3 className="text-center md:text-start text-offwhite text-lg">
-                  @2025 - All Rights Reserved by{" "}
+                  © {new Date().getFullYear()} - All Rights Reserved by{" "}
                   <Link href="https://adminmart.com/" target="_blank">
                     {" "}
                     highkey consulting
                   </Link>
                 </h3>
               </div>
-              {/* <div className="flex justify-center md:justify-end">
-              <Link href="/">
-                <h3 className="text-offwhite pr-6">Privacy policy</h3>
-              </Link>
-              <Link href="/">
-                <h3 className="text-offwhite pl-6 border-solid border-l border-footer">
-                  Terms & conditions
-                </h3>
-              </Link>
-            </div> */}
+              <div className="flex justify-center md:justify-end">
+                <p className="text-white  font-bold">
+                  inquiry@jenniferlvelez.com
+                </p>
+              </div>
             </div>
           </div>
         </div>

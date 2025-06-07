@@ -115,7 +115,7 @@ const AboutPage: React.FC = () => {
 
       <div className=" mb-10">
         <h3 className="text-4xl font-bold  text-center mt-10 mb-6">
-          HighKey Story Showcase
+          highkey Story Showcase
         </h3>
 
         <p className="text-center  text-lg px-10 md:px-[20%] mb-6">
@@ -162,7 +162,7 @@ const AboutPage: React.FC = () => {
 
       {/* ----------------------------------------------------------------------------------------- */}
       <div className="px-8 mb-10 flex flex-col md:flex-row justify-between gap-10 lg:justify-around ">
-        <div className="flex flex-col items-center lg:items-start ml-20">
+        <div className="flex flex-col items-center lg:items-start lg:ml-20">
           <h3 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8D1A81] to-[#2C0728]">
             Our Founder
           </h3>
@@ -171,10 +171,10 @@ const AboutPage: React.FC = () => {
             alt="Jennifer"
             width={265}
             height={265}
-            className="rounded-lg mt-10 mb-4"
+            className="rounded-lg mt-10 mb-0"
           />
         </div>
-        <div className="text-justify mt-24 text-lg w-full md:w-[50%]">
+        <div className="text-justify mt-10 md:mt-24 text-lg w-full md:w-[50%]">
           <div className="relative">
             <p className="relative before:content-[''] before:absolute before:top-[-2rem] before:right-[-20px] before:w-[40px] before:h-[40px] before:bg-[url('/images/aboutus/two-squares.svg')] before:bg-contain before:bg-no-repeat ">
               Jennifer is the visionary founder of a forward-thinking
@@ -195,7 +195,7 @@ const AboutPage: React.FC = () => {
               alt="Quote"
               width={200}
               height={200}
-              className="absolute md:hidden top-1/2 left-1/2 rotate-180 transform translate-x-[0%] opacity-5 translate-y-1/3 "
+              className="absolute md:hidden top-1/2 left-1/4 rotate-180 transform translate-x-[0%] opacity-5 translate-y-1/3 "
             />
           </div>
         </div>

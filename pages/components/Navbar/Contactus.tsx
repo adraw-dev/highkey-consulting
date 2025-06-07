@@ -37,13 +37,16 @@ const Contactusform = () => {
     } else {
       try {
         setIsLoading(true);
-        const response = await fetch("https://highkey-api.vercel.app/api/send-email", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ name, email, service, Message }),
-        });
+        const response = await fetch(
+          "https://highkey-api.vercel.app/api/send-email",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name, email, service, Message }),
+          }
+        );
         const data = await response.json();
         if (data.status) {
           toast.success("Email sent successfully!");
@@ -223,7 +226,16 @@ const Contactusform = () => {
                         disabled={isDisabled || isLoading}
                         className="py-3 px-5 text-sm disabled:opacity-50 font-medium w-full text-center text-white rounded-lg bg-darkpurple hover:bg-hopurple focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                       >
-                        Let&apos;s Connect!
+                        {isLoading ? (
+                          <div className="flex space-x-2   justify-center items-center   dark:invert">
+                            <span className="sr-only">Loading...</span>
+                            <div className="h-3 w-3 top- bg-white rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+                            <div className="h-3 w-3 bg-white rounded-full animate-bounce [animation-delay:-0.13s]"></div>
+                            <div className="h-3 w-3 bg-white rounded-full animate-bounce"></div>
+                          </div>
+                        ) : (
+                          <p>let&apos;s connect!</p>
+                        )}
                       </button>
                     </form>
                   </div>

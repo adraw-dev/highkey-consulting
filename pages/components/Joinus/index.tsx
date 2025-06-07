@@ -5,6 +5,7 @@ import { toast } from "sonner";
 const Join = () => {
   const router = usePathname();
   const [isMain, setIsMain] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   function isPrincipalPage(path: string) {
     return path === "/";
@@ -22,22 +23,26 @@ const Join = () => {
     const service = (form[2] as HTMLInputElement).value;
     const Message = (form[3] as HTMLInputElement).value;
 
-    console.log(name, email, service);
-
     if (name === "" || email === "" || service === "") {
       // alert("Please fill in all fields");
       toast.warning("Please fill in all fields");
     } else {
       try {
-        const response = await fetch("https://highkey-api.vercel.app/api/send-email", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ name, email, service, Message }),
-        });
+        setIsLoading(true);
+        const response = await fetch(
+          "https://highkey-api.vercel.app/api/send-email",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name, email, service, Message }),
+          }
+        );
         const data = await response.json();
         if (data.status) {
+          setIsLoading(false);
+          form.reset();
           toast.success("Email sent successfully!");
         } else {
           toast.error("Error sending email. Please try again.");
@@ -45,19 +50,14 @@ const Join = () => {
       } catch (error) {
         console.error("Error:", error);
         toast.error("Error sending email. Please try again.");
+        setIsLoading(false);
       }
     }
   };
 
   return (
     <div
-      className={`bg-joinus  ${isMain ? "bg-white text-black" : "bg-[#1a3b3b]"} inset-shadow-sm mb-20 z-20`}
-      style={{
-        backgroundImage: `${isMain ? 'url("/images/joinus/feather.svg")' : 'url("/images/joinus/feather-white.svg")'}`,
-        backgroundRepeat: "no-repeat, no-repeat",
-        backgroundSize: "14rem",
-        backgroundPosition: "100% 56%, 23% 1%",
-      }}
+      className={`  ${isMain ? "bg-white text-black bg-joinus" : "mb-20 relative z-10 bg-[linear-gradient(180deg,_rgba(141,_26,_129,_1)_0%,_rgba(39,_7,_36,_1)_71%,_rgba(25,_22,_23,_1)_100%)]"} inset-shadow-sm  z-20`}
     >
       <div className="mx-auto max-w-2xl py-20 lg:max-w-7xl  lg:px-8">
         <div className="text-center">
@@ -125,12 +125,22 @@ const Join = () => {
                     placeholder="Your message"
                     rows={4}
                   ></textarea>
-                  <div className="sm:mr-3 justify-center flex items-center">
+                  <div className="pb-5 sm:mr-3 justify-center flex items-center">
                     <button
                       type="submit"
-                      className="joinButton w-full sm:w-0 text-lg  text-white font-semibold text-center rounded-xl sm:rounded-full bg-darkpurple hover:bg-hopurple"
+                      disabled={isLoading}
+                      className={`joinButton w-full sm:w-0 text-lg  text-white font-semibold text-center rounded-xl sm:rounded-full bg-darkpurple hover:bg-hopurple ${isLoading && "opacity-70"}`}
                     >
-                      let&apos;s connect!
+                      {isLoading ? (
+                        <div className="flex space-x-2   justify-center items-center  h-12 dark:invert">
+                          <span className="sr-only">Loading...</span>
+                          <div className="h-5 w-5 top- bg-white rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+                          <div className="h-5 w-5 bg-white rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+                          <div className="h-5 w-5 bg-white rounded-full animate-bounce"></div>
+                        </div>
+                      ) : (
+                        <p>let&apos;s connect!</p>
+                      )}
                     </button>
                   </div>
                 </div>
