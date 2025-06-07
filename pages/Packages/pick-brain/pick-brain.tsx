@@ -94,7 +94,7 @@ const PickBrain: React.FC = () => {
           and scales based on the size of your company and revenue.
           <br />
         </p>
-        <div className="mt-10 rounded-xl">
+        <div className="-mt-10 md:mt-10 rounded-xl">
           <video
             src="/images/media/el pavo ese.mp4"
             className="w-full h-[400px] rounded-lg"

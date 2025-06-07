@@ -15,7 +15,7 @@ const Header = ({ title }: HeaderProps) => {
         height={168}
         className="absolute left-0 hidden md:block"
       />
-      <div className="flex  items-start mt-10 md:mt-0  justify-between gap-10">
+      <div className="flex  items-start mt-10 p-5 md:mt-0  justify-center gap-2">
         <Image
           src="/images/navbar/group.svg"
           alt="hero-image"
@@ -24,7 +24,7 @@ const Header = ({ title }: HeaderProps) => {
           //   className="absolute left-0 hidden md:block"
         />
 
-        <h2 className="text-4xl mt-30 text-white font-bold mb-8 text-center z-10">
+        <h2 className="text-3xl md:text-4xl mt-30  text-white font-bold mb-8 text-center z-10">
           {title}
         </h2>
       </div>

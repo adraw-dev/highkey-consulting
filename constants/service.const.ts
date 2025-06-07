@@ -28,7 +28,7 @@ export const servicesInfo: Service[] = [
   },
   {
     slug: "marketing-storytelling",
-    title: "MARKETING/STORYTELLING",
+    title: "MARKETING / STORYTELLING",
     description:
       "Our marketing and storytelling services are designed to help your business stand out by crafting and sharing a narrative that captivates your audience, builds emotional connections, and drives meaningful engagement. We believe that every brand has a unique story to tell, and we specialize in bringing that story to life through creative, authentic, and strategic marketing.",
     offers: [
