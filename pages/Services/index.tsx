@@ -49,7 +49,7 @@ const ConsultingPage: React.FC = () => {
                 // approach="We take a creative, values-based approach to communications, ensuring your strategy not only reflects your brand’s identity but also empowers your organization to stand out in a crowded marketplace. By blending strategic thinking with authentic storytelling, we help you communicate with clarity, confidence, and purpose."
                 imageUrl="/images/services/strategy.jpg"
                 reverse={false}
-                url="/Consulting/communications-strategy"
+                url="/Services/communications-strategy"
               />
             </motion.div>
 
@@ -75,7 +75,7 @@ const ConsultingPage: React.FC = () => {
                 // approach="We take a values-based, creative approach to marketing and storytelling, ensuring your brand’s message is not only heard but felt. By blending strategic thinking with authentic storytelling, we help you connect with your audience on a deeper level, turning customers into advocates and ideas into action."
                 imageUrl="/images/services/marketing.jpg"
                 reverse={true}
-                url="/Consulting/marketing-storytelling"
+                url="/Services/marketing-storytelling"
               />
             </motion.div>
 
@@ -100,7 +100,7 @@ const ConsultingPage: React.FC = () => {
                 // approach="We take a collaborative, values-driven approach to design, ensuring every element we create aligns with your brand’s mission and vision. By combining strategic thinking with artistic flair, we deliver designs that are not only visually stunning but also purposeful and impactful."
                 imageUrl="/images/services/event.jpg"
                 reverse={false}
-                url="/Consulting/graphic-design"
+                url="/Services/graphic-design"
               />
             </motion.div>
 
@@ -128,7 +128,7 @@ const ConsultingPage: React.FC = () => {
                 imageUrl="/images/services/3.jpg"
                 reverse={true}
                 postionImage="top"
-                url="/Consulting/brand-activations-event-planning"
+                url="/Services/brand-activations-event-planning"
               />
             </motion.div>
 
@@ -154,7 +154,7 @@ const ConsultingPage: React.FC = () => {
                 // approach="We take a holistic, creative, and values-driven approach to brand strategy, ensuring your brand is not only visually compelling but also strategically sound. By blending insights, storytelling, and design, we help you build a brand that inspires trust, loyalty, and growth."
                 imageUrl="/images/services/brand.jpg"
                 reverse={false}
-                url="/Consulting/brand-strategy"
+                url="/Services/brand-strategy"
               />
             </motion.div>
 
@@ -180,7 +180,7 @@ const ConsultingPage: React.FC = () => {
                 // approach="We take a personalized, values-driven approach to personal branding, ensuring your brand is authentic, compelling, and aligned with your goals. By combining strategic insights with creative execution, we help you build a personal brand that opens doors, fosters trust, and amplifies your influence."
                 imageUrl="/images/services/personal_brand.jpg"
                 reverse={true}
-                url="/Consulting/personal-branding"
+                url="/Services/personal-branding"
               />
             </motion.div>
 
@@ -207,7 +207,7 @@ const ConsultingPage: React.FC = () => {
                 // approach="We take a holistic, empathetic, and action-oriented approach to DEI, recognizing that every organization’s journey is unique. By combining data-driven insights with practical solutions, we help you create a culture where diversity is celebrated, equity is prioritized, and inclusion is woven into the fabric of your organization."
                 imageUrl="/images/services/lgtb.jpg"
                 reverse={false}
-                url="/Consulting/diversity-equity-inclusion"
+                url="/Services/diversity-equity-inclusion"
               />
             </motion.div>
 
@@ -234,7 +234,7 @@ const ConsultingPage: React.FC = () => {
                 imageUrl="/images/services/gen_z.jpg"
                 reverse={true}
                 postionImage="top"
-                url="/Consulting/gen-z-consumer-strategy"
+                url="/Services/gen-z-consumer-strategy"
               />
             </motion.div>
           </div>

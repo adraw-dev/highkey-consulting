@@ -22,7 +22,7 @@ const services: CardServicesProps[] = [
     ),
     description: "",
     imageUrl: "/images/services/strategy.jpg",
-    url: "/Consulting/communications-strategy",
+    url: "/Services/communications-strategy",
   },
   {
     title: (
@@ -40,7 +40,7 @@ const services: CardServicesProps[] = [
     description: "",
     imageUrl: "/images/services/marketing.jpg",
     postionImage: "top",
-    url: "/Consulting/marketing-storytelling",
+    url: "/Services/marketing-storytelling",
   },
   {
     title: (
@@ -58,7 +58,7 @@ const services: CardServicesProps[] = [
     ),
     description: "",
     imageUrl: "/images/services/lgtb.jpg",
-    url: "/Consulting/diversity-equity-inclusion",
+    url: "/Services/diversity-equity-inclusion",
   },
   {
     title: (
@@ -76,7 +76,7 @@ const services: CardServicesProps[] = [
     ),
     description: "",
     imageUrl: "/images/services/event.jpg",
-    url: "/Consulting/brand-activations-event-planning",},
+    url: "/Services/brand-activations-event-planning",},
   {
     title: (
       <p>
@@ -93,7 +93,7 @@ const services: CardServicesProps[] = [
     ),
     description: "",
     imageUrl: "/images/services/brand.jpg",
-    url: "/Consulting/brand-strategy",
+    url: "/Services/brand-strategy",
   },
   {
     title: (
@@ -111,7 +111,7 @@ const services: CardServicesProps[] = [
     ),
     description: "",
     imageUrl: "/images/services/personal_brand.jpg",
-    url: "/Consulting/personal-branding",
+    url: "/Services/personal-branding",
   },
   {
     title: (
@@ -130,7 +130,7 @@ const services: CardServicesProps[] = [
     description: "",
     imageUrl: "/images/services/gen_z.jpg",
     postionImage: "top",
-    url: "/Consulting/gen-z-consumer-strategy",
+    url: "/Services/gen-z-consumer-strategy",
   },
 ];
 

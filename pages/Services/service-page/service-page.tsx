@@ -81,7 +81,7 @@ const ServicePage = (props: ServicePageProps) => {
         {Array.isArray(servicesInfo) &&
           servicesInfo.map((service, idx) => (
             <Link
-              href={`/Consulting/${service.slug}`}
+              href={`/Services/${service.slug}`}
               key={service.slug || idx}
             >
               <div className="flex items-start flex-col gap-3  mb-6">

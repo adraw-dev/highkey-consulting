@@ -18,7 +18,7 @@ const products: ProductType[] = [
   {
     id: 1,
     section: "",
-    link: ["Home", "About", "Consulting"],
+    link: ["Home", "About", "Services"],
   },
   {
     id: 2,
