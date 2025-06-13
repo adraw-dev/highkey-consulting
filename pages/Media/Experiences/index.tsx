@@ -32,10 +32,11 @@ const Experiences = () => {
   return (
     <section>
       <div className="px-10 lg:px-28 py-10">
-        <h4 className="text-2xl font-semibold">
+        <h4 className="text-2xl font-semibold text-center">
           With experience spanning international keynotes, DEI research, fashion
-          modeling, and cultural storytelling, she represents a bold, interdival
-          voice in today&#39;s media landscape.{" "}
+          modeling, and <br />
+          cultural storytelling, she represents a bold, intersectional voice in
+          today&apos;s media landscape.
         </h4>
       </div>
       <div className="bg-[#95B1AE]/20 w-full py-10 h-auto">

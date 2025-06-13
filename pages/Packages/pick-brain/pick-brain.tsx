@@ -7,7 +7,7 @@ const PickBrain: React.FC = () => {
 
   return (
     <div>
-      <div className="bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] h-auto pt-10 md:py-8 w-full  flex flex-col justify-center relative">
+      <div className="bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] h-auto pt-10 lg:py-8 w-full  flex flex-col justify-center relative">
         <div className="flex items-center  mx-auto justify-between gap-10 ">
           <Image
             src="/images/navbar/group.svg"
@@ -21,8 +21,8 @@ const PickBrain: React.FC = () => {
           </h2>
         </div>
         <div>
-          <div className="flex flex-col-reverse md:flex-row justify-between px-10 md:px-0 mt-10 items-center">
-            <div className=" h-auto md:w-2/6 md:h-4 mx-auto">
+          <div className="flex flex-col-reverse lg:flex-row justify-between px-10 md:px-0 mt-10 items-center">
+            <div className=" h-auto lg:w-2/6 lg:h-4 mx-auto">
               <Image
                 src="/images/package/thinking.png"
                 alt="thingking"
@@ -31,10 +31,10 @@ const PickBrain: React.FC = () => {
                 style={{
                   maskImage: "linear-gradient(black 96%, transparent)",
                 }}
-                className=" md:absolute   w-[450px]  md:block md:w-[450px] md:top-40  md:-left-4 lg:w-[500px] lg:top-28 lg:left-30 xl:w-[600px] xl:top-10 xl:left-30  2xl:top-10 2xl:left-40"
+                className=" lg:absolute   lg:w-[550px]  lg:left-2 xl:w-[600px] xl:h-[400px]  xl:left-30  2xl:left-40"
               />
             </div>
-            <h4 className=" w-full md:w-[60%] lg:w-[57%] xl:w-[58%] 2xl:w-[53%] text-2xl text-white font-bold mb-8 ml  z-10">
+            <h4 className="text-center lg:text-left w-full md:w-[60%] lg:w-[57%] xl:w-[58%] 2xl:w-[51%] text-2xl text-white font-bold mb-8 ml  z-10">
               Need a quick, no-fluff strategy chat with someone who gets
               <br /> your brand challenges?
             </h4>
@@ -43,8 +43,8 @@ const PickBrain: React.FC = () => {
       </div>
 
       <div className="flex justify-between items-center bg-gray-100">
-        <div className="w-2/6 h-4 hidden md:block"></div>
-        <div className="w-full md:w-[60%] lg:w-[63%] xl:w-[63%] 2xl:w-[70%] flex flex-col items-center justify-center">
+        <div className="lg:w-2/6 h-4 hidden md:block"></div>
+        <div className="w-full md:w-[100%] lg:w-[63%] xl:w-[63%] 2xl:w-[70%] flex flex-col items-center justify-center">
           <p className=" text-xl mt-12 mb-8 text-justify font-medium px-8 lg:px-[5rem] 2xl:px-[17rem]">
             Sometimes you don’t need a full consulting package—just 50 minutes
             of focused conversation with an experienced strategist.

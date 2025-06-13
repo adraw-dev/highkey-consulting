@@ -21,8 +21,8 @@ const ConsultingPage: React.FC = () => {
             Whether you’re seeking support for a one time project or ongoing
             support we’ve got you covered with experience across industries like
             retail, beauty, entertainment, education, hospitality, food +
-            beverage, healthcare, legal, construction and more. From a small one
-            team show to a large enterprise size production, let us be a
+            beverage, healthcare, legal, construction and more. From a small
+            one-person team to a large enterprise-size production, let us be a
             resource to propel your growth.
           </p>
 
@@ -37,7 +37,7 @@ const ConsultingPage: React.FC = () => {
             >
               <ServiceSection
                 title="COMMUNICATIONS STRATEGY"
-                description="We offer customized communication strategy services to help your organization create impactful messages that connect with your audience, build trust, and encourage engagement—aligned with your brand’s values, goals, and story."
+                description="We offer customized communication strategy services to help your organization create impactful messages that connect with your audience, build trust, and encourage engagement aligned with your brand’s values, goals, and story."
                 // offers={[
                 //   "Brand Messaging: Define your core message, voice, and tone to ensure consistency and authenticity across all platforms.",
                 //   "Audience Analysis: Identify and understand your target audience to create messages that truly connect and inspire action.",
@@ -168,7 +168,7 @@ const ConsultingPage: React.FC = () => {
             >
               <ServiceSection
                 title="PERSONAL BRANDING"
-                description="We help you define and amplify your personal brand to stand out, build trust, and unlock opportunities—authentically reflecting your values, expertise, and goals"
+                description="We help you define and amplify your personal brand to stand out, build trust, and unlock opportunities—authentically reflecting your values, expertise, and goals."
                 // offers={[
                 //   "Brand Discovery: Uncover your core values, strengths, and unique differentiators to create a personal brand that truly represents who you are and what you stand for.",
                 //   "Brand Positioning: Define your niche, target audience, and key messaging to establish yourself as a thought leader or go-to expert in your field.",

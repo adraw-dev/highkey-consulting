@@ -62,7 +62,7 @@ const Insta = () => {
   return (
     <div className="mx-auto pt-20 mb-20 bg-[linear-gradient(180deg,_#8d1a81_0%,_#270724_55%,_#191617_62%)] pb-16 md:px lg:px-32 sm:px-6 lg:mb-0  ">
       <h2 className="text-4xl lg:text-65xl flex justify-center  font-semibold  md:font-bold sm:leading-tight  text-center text-white">
-        Connect with us on LinkedIn
+        Connect on LinkedIn
       </h2>
       <div className="mt-10 ">
         <Carousel plugins={[plugin.current]} className="px-2 md:px-5 w-full">
@@ -83,7 +83,6 @@ const Insta = () => {
             })}
           </CarouselContent>
         </Carousel>
-       
       </div>
     </div>
   );

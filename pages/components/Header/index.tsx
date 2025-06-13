@@ -21,10 +21,10 @@ const Header = ({ title }: HeaderProps) => {
           alt="hero-image"
           width={56}
           height={56}
-          //   className="absolute left-0 hidden md:block"
+            className="-mt-2"
         />
 
-        <h2 className="text-3xl md:text-4xl mt-30  text-white font-bold mb-8 text-center z-10">
+        <h2 className="text-4xl md:text-5xl mt-30  text-white font-bold mb-8 text-center z-10">
           {title}
         </h2>
       </div>

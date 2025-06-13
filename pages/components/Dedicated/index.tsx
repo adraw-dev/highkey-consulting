@@ -49,9 +49,9 @@ const Dedicated = () => {
                 and share behind the scenes content. Allow people to connect
                 with you so they feel like they can connect to your mission.
               </p>
-              <p className="text-2xl font-medium md:font-semibold mt-12 lg:ml-32 preline text-center lg:text-start">
+              <p className="text-2xl font-medium md:font-semibold mt-12 lg:ml-32 text-center lg:text-start">
                 {" "}
-                Jennifer, CEO of HighKey Consulting
+                Jennifer, Founder of highkey consulting
               </p>
             </div>
           </motion.div>

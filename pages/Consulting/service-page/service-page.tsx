@@ -1,14 +1,14 @@
 import React from "react";
 import SimpleParallax from "simple-parallax-js";
 import Image from "next/image";
-import { servicesInfo } from "@/constants/service.const";
+import { Offers, servicesInfo } from "@/constants/service.const";
 import Link from "next/link";
 
 export interface ServicePageProps {
   slug?: string;
   title: string;
   description: string;
-  offers?: string[];
+  offers?: Offers[];
   approach?: string;
   imageUrl: string;
   positionImage?: string;
@@ -21,15 +21,9 @@ const ServicePage = (props: ServicePageProps) => {
       key={props.slug}
       className="flex justify-between gap-20 bg-gray-100 min-h-screen text-justify  "
     >
-      {/* <h1 className="text-4xl font-bold mb-8 text-center">{props.title}</h1> */}
       <div className="w-full md:w-3/4">
         <div className="h-[20rem]   w-full rounded-2xl my-10 ">
-          <SimpleParallax
-            // overflow
-            // scale={1.1}
-            // transition="cubic-bezier(0,0,0,1)"
-            maxTransition={40}
-          >
+          <SimpleParallax maxTransition={40}>
             <Image
               className="h-[20rem] w-full  rounded-2xl "
               src={props.imageUrl}
@@ -42,26 +36,19 @@ const ServicePage = (props: ServicePageProps) => {
               height={320}
             />
           </SimpleParallax>
-          {/* <div
-          style={{
-            backgroundImage: `url(${props.imageUrl})`,
-            backgroundPosition: `center`,
-          }}
-          className={`  bg-no-repeat bg-cover h-[20rem] w-full rounded-md shadow-xl`}
-        ></div> */}
         </div>
 
         <p className="text-gray-700 mb-4 text-justify ">{props.description}</p>
         <div className="my-10">
           <h3 className="text-2xl font-bold text-darkpurple mb-2">
-            Our Offers
+            What We Offer
           </h3>
           <ul className=" mb-4 ">
             {props.offers &&
               props.offers.map((offer, index) => (
                 <li
                   key={index}
-                  className="flex items-center text-gray-700 mt-4"
+                  className="flex items-center text-left text-gray-700 mt-4"
                 >
                   <Image
                     src="/images/package/peacock.svg"
@@ -70,7 +57,10 @@ const ServicePage = (props: ServicePageProps) => {
                     height={46}
                     className="mr-2"
                   />
-                  {offer}
+                  <div>
+                    <p className="text-[#1A3B3B] font-semibold">{offer.title}</p>
+                    <p>{offer.text}</p>
+                  </div>
                 </li>
               ))}
           </ul>

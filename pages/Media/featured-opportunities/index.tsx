@@ -49,7 +49,7 @@ export default function FeaturedOpportunities() {
                   title="Keynote & Panel Speaking"
                 />
               </div>
-              <div className="flex flex-col lg:flex-row lg:gap-56">
+              <div className="flex flex-col md:flex-row lg:gap-32 xl:gap-24 ">
                 <IconComponent
                   icon="vineta2.svg"
                   title="Media Features & Publications"
@@ -59,7 +59,7 @@ export default function FeaturedOpportunities() {
                   title="Product Ambassador & Retail Modeling"
                 />
               </div>
-              <div className="flex flex-col lg:flex-row lg:gap-56">
+              <div className="flex flex-col md:flex-row lg:gap-32 xl:gap-24">
                 <IconComponent
                   icon="icono_hk2.svg"
                   title="Ethnographic Research & Interviews"

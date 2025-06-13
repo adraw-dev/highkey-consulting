@@ -42,7 +42,7 @@ const PackageCard: React.FC<PackageCardProps> = ({
           </p>
           <ul className="mb-9 flex flex-col gap-[14px]">
             {features?.map((feature, index) => (
-              <li key={index} className="flex items-center ">
+              <li key={index} className="flex items-start ">
                 <Image
                   src="/images/package/peacock.svg"
                   alt="Check Icon"
