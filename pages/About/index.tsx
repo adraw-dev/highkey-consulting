@@ -113,7 +113,7 @@ const AboutPage: React.FC = () => {
           > */}
       </div>
 
-      <div className=" mb-10">
+      {/* <div className=" mb-10">
         <h3 className="text-4xl font-bold  text-center mt-10 mb-6">
           highkey Story Showcase
         </h3>
@@ -135,8 +135,10 @@ const AboutPage: React.FC = () => {
             controls
           />
         </div>
+      </div> */}
+      <div className="w-full bg-white h-10">
+        
       </div>
-
       {/* ------------------------------------------------------------------------------ */}
       <div className="flex h-auto py-10 px-10 w-full flex-wrap justify-center bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] items-center mb-10">
         <Carousel plugins={[plugin.current]} className="px-2 md:px-5 w-full">
