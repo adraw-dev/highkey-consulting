@@ -170,7 +170,7 @@ const AboutPage: React.FC = () => {
             Our Founder
           </h3>
           <Image
-            src="/images/aboutus/Jennifer_aboutUS.png"
+            src="/images/aboutus/Jennifer_aboutUS.jpg"
             alt="Jennifer"
             width={516}
             height={730}
