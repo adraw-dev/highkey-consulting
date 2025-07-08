@@ -1,11 +1,10 @@
 import Head from "next/head";
 
 import AboutMe from "./components/AboutMe/index";
-import Articles from "./components/Articles/index";
 import Banner from "./components/Banner/index";
 import Dedicated from "./components/Dedicated/index";
 import Insta from "./components/Insta/index";
-import Joinus from "./components/Joinus/index";
+import Joinbetter from "./components/Joinus/joinus";
 import Services from "./components/Services/index";
 
 export default function Home() {
@@ -22,7 +21,7 @@ export default function Home() {
           <Services />
           <Dedicated />
           {/* <Articles /> */}
-          <Joinus />
+          <Joinbetter />
           <Insta />
         </main>
       </div>

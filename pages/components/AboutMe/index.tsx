@@ -85,7 +85,7 @@ const AboutMe = () => {
                 </p>
                 <div className="justify-center hidden md:flex text-center lg:text-start">
                   <Link href={"#joinus-section"}>
-                    <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-darkpurple text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hopurple">
+                    <button className="mt-4 w-48 py-3 rounded-full bg-darkpurple hover:bg-hopurple text-white font-semibold text-lg transition-all duration-200 flex justify-center items-center">
                       Let’s connect!
                     </button>
                   </Link>

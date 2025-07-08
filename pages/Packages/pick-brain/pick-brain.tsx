@@ -58,7 +58,7 @@ const PickBrain: React.FC = () => {
           <a>
             <button
               onClick={() => setIsOpen(true)}
-              className="text-sm md:text-xl font-semibold hover:shadow-xl mb-8 bg-darkpurple  text-center text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hopurple"
+              className="mt-4 w-48 py-3 rounded-full bg-darkpurple hover:bg-hopurple text-white font-semibold text-lg transition-all duration-200 flex justify-center items-center"
             >
               Let’s connect!
             </button>
@@ -66,7 +66,7 @@ const PickBrain: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-7 px-8  lg:px-[10rem] 2xl:px-[17rem]">
+      <div className="flex flex-col gap-7 px-8 mt-20  lg:px-[10rem] 2xl:px-[17rem]">
         <h3 className="text-[#1A3B3B] text-4xl font-bold">How does it work?</h3>
         <p className="text-xl  text-justify font-medium ">
           One of my greatest joys is connecting with others! Founders are
@@ -94,7 +94,7 @@ const PickBrain: React.FC = () => {
           and scales based on the size of your company and revenue.
           <br />
         </p>
-        <div className="-mt-10 md:mt-10 rounded-xl">
+        <div className="-mt-10 md:my-10 mbrounded-xl">
           <video
             src="/images/media/el pavo ese.mp4"
             className="w-full h-[400px] rounded-lg"

@@ -50,7 +50,7 @@ const Experiences = () => {
                 >
                   <a href={item.url} target="_blank" rel="noopener noreferrer">
                     <div className="flex flex-col justify-center gap-6 w-full items-center">
-                      <div className="relative w-[300px] h-[180px] flex-shrink-0">
+                      <div className="relative w-full h-[280px] flex-shrink-0">
                         <Image
                           alt={item.title}
                           src={`/images/media/${item.img}`}

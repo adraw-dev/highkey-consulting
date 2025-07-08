@@ -10,6 +10,7 @@ import Image from "next/image";
 import React from "react";
 import Header from "../components/Header";
 import CroppedImageCard from "./components/croppedImageCard";
+import MisionAndValues from "./components/mision&values";
 
 const services: string[] = [
   "COMMUNICATIONS STRATEGY",
@@ -136,9 +137,7 @@ const AboutPage: React.FC = () => {
           />
         </div>
       </div> */}
-      <div className="w-full bg-white h-10">
-        
-      </div>
+      <div className="w-full bg-white h-10"></div>
       {/* ------------------------------------------------------------------------------ */}
       <div className="flex h-auto py-10 px-10 w-full flex-wrap justify-center bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] items-center mb-10">
         <Carousel plugins={[plugin.current]} className="px-2 md:px-5 w-full">
@@ -248,8 +247,8 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <div className="flex flex-col md:flex-row justify-around  gap-10 lg:gap-44 mt-10  px-10 lg:px-40 mb-10">
+      <MisionAndValues />
+      {/* <div className="flex flex-col md:flex-row justify-around  gap-10 lg:gap-44 mt-10  px-10 lg:px-40 mb-10">
         <div className="w-full lg:w-[50%] h-auto pt-10 pb-20 md:pb-5 px-5 md:px-10 rounded-lg bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)] text-white relative before:content-[''] before:absolute before:bottom-[-0rem] before:right-[-0rem] before:w-[60px] before:h-[60px] before:bg-[url('/images/aboutus/two-squares.svg')] before:bg-contain before:bg-no-repeat">
           <h4 className="text-4xl font-bold mb-10">Our Mission</h4>
           <p>
@@ -281,7 +280,7 @@ const AboutPage: React.FC = () => {
             <p>The ceiling? Gone.</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

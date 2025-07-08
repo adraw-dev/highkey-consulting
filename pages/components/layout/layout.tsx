@@ -26,7 +26,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <Toaster position="top-center" richColors />
         <Navbar />
         <div
-          className={`mt-${isMain ? "2" : "mt-16 md:mt-20 lg:mt-28"}  ${!isMain ? "bg-lightgrey" : ""} md:pb-10 md:pt-${isMain ? "10" : "52"}`}
+          className={`mt-${isMain ? "2" : "mt-16 md:mt-20 lg:mt-28"}  ${!isMain ? "bg-lightgrey" : ""} md:pt-${isMain ? "10" : "52"}`}
         >
           {children}
         </div>

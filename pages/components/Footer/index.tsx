@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Join from "../Joinus";
+import Joinbetter from "../Joinus/joinus";
 
 // MIDDLE LINKS DATA
 interface ProductType {
@@ -47,8 +48,8 @@ const footer = () => {
   return (
     <>
       {!isMain && (
-        <div className="mb-20">
-          <Join />
+        <div className="mb-40">
+          <Joinbetter />
         </div>
       )}
       <div className="bg-charoal -mt-40" id="first-section">

@@ -144,7 +144,7 @@ const Services = () => {
         width={500}
         height={10}
       />
-      <div className="mx-auto w-full lg:w-[80%] px-2 mt-32   sm:py-4 lg:px-8 rounded-3xl">
+      <div className="mx-auto w-full md:w-[80%] px-2 mt-32   sm:py-4 lg:px-8 rounded-3xl">
         <div className="w-full mx-auto flex justify-center">
           <h2 className="text-center font-semibold text-5xl  mb-10 text-lightgrey">
             Ready to take your business <br /> to the next level?
