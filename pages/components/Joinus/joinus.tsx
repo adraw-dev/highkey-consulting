@@ -1,7 +1,7 @@
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FormEvent, useEffect, useState } from "react";
 import { toast } from "sonner";
-import Image from "next/image";
 
 const Joinbetter = () => {
   const router = usePathname();
@@ -57,7 +57,7 @@ const Joinbetter = () => {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col md:flex-row">
+    <div className="w-full min-h-screen flex flex-col md:flex-row  ">
       {/* Left side: Image and text */}
       <div
         className={`md:w-1/2 w-full flex flex-col justify-center items-center ${isMain ? "bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)]" : "bg-[linear-gradient(180deg,_#8d1a81_0%,_#270724_55%,_#191617_62%)]"} relative overflow-hidden`}
@@ -67,18 +67,19 @@ const Joinbetter = () => {
         {/* Pseudo-element for peacock feather */}
         {/* Pseudo-element for peacock feather using a div absolutely positioned at the left edge */}
         <div className="block absolute left-0  -translate-y-1/2 z-20 h-[50%] md:h-[30%] aspect-square pointer-events-none">
-          <Image
-            src="/images/joinus/peacock_feather.png"
-            alt="Peacock Feather"
-            fill
-            style={{ objectFit: "contain" }}
-            className="!left-[-10%]" // move image to the very edge
-            priority
-          />
+         
+            <Image
+              src="/images/joinus/peacock_feather.png"
+              alt="Peacock Feather"
+              fill
+              style={{ objectFit: "contain" }}
+              className="!left-[-10%]" // move image to the very edge
+              priority
+            />
         </div>
         {/* Content */}
-        <div className="relative z-10 flex flex-col justify-center mt-56 items-start h-full px-8 py-16">
-          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
+        <div className="relative z-10 flex flex-col justify-center mt-56 items-start h-full px-10 py-16">
+          <h2 className="text-white text-4xl md:text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-6">
             Schedule a free
             <br />
             30 minute consultation
@@ -100,7 +101,7 @@ const Joinbetter = () => {
       </div>
       {/* Right side: Form */}
       <div
-        className={`md:w-1/2 w-full flex flex-col md:justify-center items-center ${isMain ? "bg-[linear-gradient(134.66deg,_#1A3B3B_6.35%,_#154643_95.93%)]" : "bg-[linear-gradient(180deg,_#8d1a81_0%,_#270724_55%,_#191617_90%)] "}  min-h-screen px-8 py-16`}
+        className={`md:w-1/2 w-full flex flex-col md:justify-center items-center ${isMain ? "bg-transparent" : "bg-[linear-gradient(180deg,_#8d1a81_0%,_#270724_55%,_#191617_90%)] "}   px-8 py-16`}
       >
         <form
           onSubmit={handleSubmit}

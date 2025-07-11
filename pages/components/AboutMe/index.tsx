@@ -11,32 +11,6 @@ interface datatype {
   url: string;
 }
 
-const Aboutdata: datatype[] = [
-  {
-    heading: "About us.",
-    imgSrc: "/images/aboutus/imgOne.svg",
-    paragraph:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
-    link: "Learn more",
-    url: "/aboutme",
-  },
-  {
-    heading: "Services.",
-    imgSrc: "/images/aboutus/imgTwo.svg",
-    paragraph:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
-    link: "Learn more",
-    url: "/#",
-  },
-  {
-    heading: "Our Works.",
-    imgSrc: "/images/aboutus/imgThree.svg",
-    paragraph:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
-    link: "Learn more",
-    url: "/#",
-  },
-];
 
 const AboutMe = () => {
   return (
